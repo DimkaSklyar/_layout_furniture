@@ -42,15 +42,6 @@ a
 	.top-navigation
 		border-bottom: 1px solid #e5e5e5
 		padding: 10px
-		.menu
-			background: none
-			border: none
-			font-size: 26px
-			color: $accent
-			transition: .3s
-			&:hover
-				cursor: pointer
-				color: $light-color
 		.top-logo
 			img
 				height: 70px
@@ -88,7 +79,7 @@ a
 						margin-right: 0
 					a
 						display: block
-						margin-right: 20px
+						margin-right: 35px
 						text-transform: uppercase
 						letter-spacing: 1px
 						color: $accent
@@ -97,7 +88,15 @@ a
 						&:hover
 							color: $light-color
 							transform: translateY(-2px)
-							text-shadow: 1px 6px 6px rgba(0, 0, 0, 0.2)
+							text-shadow: 1px 5px 3px rgba(0, 0, 0, 0.2)
+	.slick-slider
+		&__item
+			&:focus
+				outline: none 0
+				border: none
+			img
+				width: 100%
+
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end
