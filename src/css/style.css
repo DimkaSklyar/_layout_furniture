@@ -5992,6 +5992,7 @@ html {
 /*==========  user style  ==========*/
 body {
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 a:link {
@@ -6110,6 +6111,115 @@ a:active {
   color: #ff5f5f;
   transform: translateY(-2px);
   text-shadow: 1px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.page-header .slick-slider-wrap {
+  position: relative;
+}
+
+.page-header .slick-slider-wrap .header-slide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  max-width: 650px;
+}
+
+.page-header .slick-slider-wrap .header-slide .title {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.page-header .slick-slider-wrap .header-slide h1 {
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #3b3b3b;
+}
+
+.page-header .slick-slider-wrap .header-slide h2 {
+  font-size: 55px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #7a7a7a;
+}
+
+.page-header .slick-slider-wrap .header-slide h1,
+    .page-header .slick-slider-wrap .header-slide h2 {
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.page-header .slick-slider-wrap .header-slide .slide-description {
+  font-style: italic;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #7a7a7a;
+  margin-bottom: 60px;
+}
+
+.page-header .slick-slider-wrap .header-slide .view {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  transition: .3s;
+}
+
+.page-header .slick-slider-wrap .header-slide .view::after, .page-header .slick-slider-wrap .header-slide .view::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 1px;
+  background-color: #818182;
+  transition: .6s;
+}
+
+.page-header .slick-slider-wrap .header-slide .view::before {
+  right: 110%;
+}
+
+.page-header .slick-slider-wrap .header-slide .view::after {
+  left: 110%;
+}
+
+.page-header .slick-slider-wrap .header-slide .view:hover::before, .page-header .slick-slider-wrap .header-slide .view:hover::after {
+  width: 60px;
+  background-color: #ff5f5f;
+}
+
+.page-header .slick-slider-wrap .header-slide .view:hover {
+  color: #ff5f5f;
+}
+
+.page-header .slick-slider-wrap .header-slide-pos-center {
+  left: 50%;
+}
+
+.page-header .slick-slider-wrap .header-slide-pos-right {
+  left: 72%;
+}
+
+.page-header .slick-slider-wrap .header-slide-pos-left {
+  left: 28%;
+}
+
+.page-header .slick-slider .slick-dots {
+  bottom: 30px;
+}
+
+.page-header .slick-slider .slick-dots li button::before {
+  background-color: #a0a0a0;
+  border-radius: 50%;
+  transition: .3s;
+  content: '';
 }
 
 .page-header .slick-slider__item:focus {

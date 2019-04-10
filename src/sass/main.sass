@@ -5,7 +5,7 @@
 /*==========  user style  ==========*/
 body
 	font-family: 'Montserrat', sans-serif
-
+	overflow-x: hidden
 a
 	&:link
 		color: $accent
@@ -90,6 +90,83 @@ a
 							transform: translateY(-2px)
 							text-shadow: 1px 5px 3px rgba(0, 0, 0, 0.2)
 	.slick-slider
+		&-wrap
+			position: relative
+			.header-slide
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%)
+				display: inline-block
+				max-width: 650px
+				.title
+					text-transform: uppercase
+					letter-spacing: 3px
+					margin-bottom: 15px
+					display: inline-block
+				h1
+					font-size: 70px
+					text-transform: uppercase
+					font-weight: 700
+					color: #3b3b3b
+				h2
+					font-size: 55px
+					font-weight: 700
+					text-transform: uppercase
+					color: #7a7a7a
+				h1,
+				h2
+					letter-spacing: 2px
+					line-height: 1
+					margin-bottom: 0
+				.slide-description
+					font-style: italic
+					max-width: 400px
+					margin: 0 auto
+					margin-top: 30px
+					font-size: 14px
+					color: #7a7a7a
+					margin-bottom: 60px
+				.view
+					text-transform: uppercase
+					font-weight: bold
+					display: inline-block
+					position: relative
+					transition: .3s
+					&::after,
+					&::before
+						content: ''
+						position: absolute
+						top: 50%
+						width: 30px
+						height: 1px
+						background-color: #818182
+						transition: .6s
+					&::before
+						right: 110%
+					&::after
+						left: 110%
+					&:hover::before,
+					&:hover::after
+						width: 60px
+						background-color: $light-color
+					&:hover
+						color: $light-color
+			.header-slide-pos-center
+				left: 50%
+			.header-slide-pos-right
+				left: 72%
+			.header-slide-pos-left
+				left: 28%
+		.slick-dots
+			bottom: 30px
+			li
+				button
+					&::before
+						background-color: $accent
+						border-radius: 50%
+						transition: .3s
+						content: ''
 		&__item
 			&:focus
 				outline: none 0
