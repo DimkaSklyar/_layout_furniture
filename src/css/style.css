@@ -6023,6 +6023,10 @@ a:active {
   text-align: center;
 }
 
+.fd-column {
+  flex-direction: column;
+}
+
 .page-header .top-contacts {
   border-bottom: 1px solid #e5e5e5;
 }
@@ -6231,6 +6235,256 @@ a:active {
   width: 100%;
 }
 
-/*==========  user style  ==========*/
+.banner-product {
+  margin: 60px 0;
+}
+
+.banner-product .row {
+  margin-bottom: 11px;
+}
+
+.banner-product__item {
+  position: relative;
+  margin: 0 11px;
+  overflow: hidden;
+}
+
+.banner-product__item .banner-txt {
+  position: absolute;
+}
+
+.banner-product .banner-big .banner-txt {
+  top: 27%;
+  padding: 60px 160px 60px 60px;
+  color: #ffffff;
+}
+
+.banner-product .banner-big .banner-txt strong {
+  letter-spacing: 3px;
+  color: #ffffff;
+  background-color: #535353;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.banner-product .banner-big .banner-txt h2 {
+  font-size: 57px;
+  line-height: 1;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.banner-product .banner-big .banner-txt h2 span {
+  font-weight: 200;
+  letter-spacing: -4px;
+}
+
+.banner-product .banner-big .banner-txt p {
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
+.banner-product .banner-big .banner-txt .price {
+  font-size: 30px;
+}
+
+.banner-product .banner-big .banner-txt .price i {
+  font-size: 27px;
+}
+
+.banner-product .banner-middle .banner-txt {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  padding: 30px 25px;
+}
+
+.banner-product .banner-middle .banner-txt .title {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 14px;
+}
+
+.banner-product .banner-middle .banner-txt h3 {
+  font-size: 24px;
+}
+
+.banner-product .banner-middle .banner-txt a {
+  position: absolute;
+  bottom: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.banner-product .banner-middle .banner-txt .price-wrap {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  background-color: #62c5de;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-product .banner-middle .banner-txt .price-wrap .old-price {
+  font-size: 14px;
+  position: relative;
+  width: fit-content;
+}
+
+.banner-product .banner-middle .banner-txt .price-wrap .old-price::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.banner-product .banner-middle .banner-txt .price-wrap .price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.banner-product .banner-middle .banner-txt .banner-view {
+  display: flex;
+  align-items: baseline;
+  transition: .2s;
+  letter-spacing: 1px;
+}
+
+.banner-product .banner-middle .banner-txt .banner-view i {
+  margin-left: 10px;
+  transition: .3s;
+}
+
+.banner-product .banner-middle .banner-txt .banner-view:hover i {
+  margin-left: 15px;
+}
+
+.banner-product .banner-middle .banner-txt .banner-view:hover {
+  color: #ff5f5f;
+}
+
+.banner-product .banner-small {
+  margin-left: 10px;
+    /*==========  user style  ==========*/;
+}
+
+.banner-product .banner-small .banner-txt {
+  top: 0;
+  height: 100%;
+  text-transform: uppercase;
+}
+
+.banner-product .banner-small .banner-txt .title {
+  letter-spacing: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #939393;
+}
+
+.banner-product .banner-small-1 {
+  margin-bottom: 20px;
+}
+
+.banner-product .banner-small-1 .banner-txt {
+  padding: 30px 20px 30px 10px;
+}
+
+.banner-product .banner-small-1 .banner-txt .pay .price {
+  font-size: 27px;
+  color: #991015;
+}
+
+.banner-product .banner-small-1 .banner-txt .pay .price i {
+  font-size: 24px;
+}
+
+.banner-product .banner-small-1 .banner-txt .pay a {
+  background-color: #2e2d32;
+  font-size: 12px;
+  padding: 5px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  color: #fff;
+  display: inline-block;
+  transition: .5s;
+}
+
+.banner-product .banner-small-1 .banner-txt .pay a:hover {
+  background-color: #ff5f5f;
+}
+
+.banner-product .banner-small-2 .banner-txt {
+  padding: 30px 10px 30px 25px;
+}
+
+.banner-product .banner-small-2 .banner-txt .title {
+  color: #2b3d66;
+}
+
+.banner-product .banner-small-2 .banner-txt .pay .old-price {
+  color: #9f9f9f;
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.banner-product .banner-small-2 .banner-txt .pay .old-price::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #9f9f9f;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.banner-product .banner-small-2 .banner-txt .pay .price {
+  color: #2b3d66;
+  font-size: 27px;
+  line-height: 1;
+}
+
+.banner-product .banner-small-2 .banner-txt .pay .price i {
+  font-size: 24px;
+}
+
+.banner-product .banner-small-2 .banner-txt .pay a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #2b3d66;
+  transition: .3s;
+}
+
+.banner-product .banner-small-2 .banner-txt .pay a i {
+  margin-left: 5px;
+  transition: .5s;
+}
+
+.banner-product .banner-small-2 .banner-txt .pay a:hover {
+  color: #ff5f5f;
+}
+
+.banner-product .banner-small-2 .banner-txt .pay a:hover i {
+  margin-left: 10px;
+}
+
 /*==========  Desktop First  ==========*/
 /*==========  Mobile First  ==========*/
