@@ -29,6 +29,9 @@ a
 .fd-column
 	flex-direction: column
 
+.row-fix
+	padding: 0 15px
+
 .page-header
 	.top-contacts
 		border-bottom: 1px solid #e5e5e5
@@ -271,13 +274,15 @@ a
 				align-items: baseline
 				transition: .2s
 				letter-spacing: 1px
-				i
-					margin-left: 10px
-					transition: .3s
-				&:hover i
-					margin-left: 15px
 				&:hover
 					color: $light-color
+				&:hover i
+					transform: translateX(15px)
+					color: $light-color
+				i
+					transform: translateX(10px)
+					transition: .3s
+					color: #ffffff
 	.banner-small
 		margin-left: 10px
 		.banner-txt
@@ -341,17 +346,165 @@ a
 						margin-top: 20px
 						color: #2b3d66
 						transition: .3s
-						i
-							margin-left: 5px
-							transition: .5s
 						&:hover
 							color: $light-color
 						&:hover i
-							margin-left: 10px
+							transform: translateX(10px)
+							color: $light-color
+						i
+							transform: translateX(5px)
+							transition: .3s
+							color: #2b3d66
+	.banner-medium
+		margin-right: 20px
+		&-1
+			margin-bottom: 20px
+			color: #ffffff
+		.banner-txt
+			top: 0
+			right: 0
+			padding: 40px 40px
+			.title
+				letter-spacing: 3px
+				font-size: 14px
+			h3
+				text-transform: uppercase
+				font-size: 22px
+				letter-spacing: 3px
+		a
+			position: absolute
+			bottom: 30px
+			right: 40px
+			color: #ffffff
+			text-transform: uppercase
+			letter-spacing: 1px
+			transition: .3s
+			&:hover
+				color: $light-color
+			&:hover i
+				transform: translateX(10px)
+				color: $light-color
+			i
+				transform: translateX(5px)
+				transition: .3s
+				color: #ffffff
+		&-2
+			.banner-txt
+				color: #b7b7b7
+				h3
+					color: #868686
+			a
+				color: #878787
+				&:hover
+					color: $light-color
+				&:hover i
+					transform: translateX(10px)
+					color: $light-color
+				i
+					transform: translateX(5px)
+					transition: .3s
+					color: #878787
+.slick-banner-slider
+	.slick-banner-wrapper
+		position: relative
+		&:focus
+			outline: none 0
+			border: none
+		.slick-banner-img
+			padding-right: 10px
+			margin-bottom: -20px
+			img
+				width: 100%
+		.header-banner-slide
+			position: absolute
+			top: 10%
+			left: 8%
+			right: 30%
+			.title
+				letter-spacing: 3px
+				text-transform: uppercase
+				font-weight: normal
+				font-size: 14px
+				margin-bottom: 10px
+				display: block
+			h3
+				color: #535353
+				font-weight: 600
+				font-size: 60px
+				line-height: .9
+			h4
+				font-weight: 200
+				font-size: 60px
+				line-height: 1
+			.slide-description
+				font-size: 12px
+				margin-top: 20px
+				width: 70%
+			.view
+				text-transform: uppercase
+				color: #535353
+				font-weight: bold
+				font-size: 14px
+				transition: .3s
+				&:hover
+					color: $light-color
+	.slick-dots
+		bottom: 30px
+		text-align: left
+		padding-left: 8%
+		li
+			button
+				&::before
+					background-color: $accent
+					border-radius: 50%
+					transition: .3s
+					content: ''
 
+.advantage
+	&-wrap
+		border-right: 1px solid rgba(53, 53, 53, 0.18)
+		padding-left: 35px
+		i
+			font-size: 50px
+			padding-right: 15px
+			color: #868686
+		strong
+			text-transform: uppercase
+		p
+			font-size: 12px
+	.no-border
+		border: none
 
-
-
+.category
+	margin: 60px 0
+	&-wrap
+		position: relative
+	&-txt
+		position: absolute
+		top: 0
+		bottom: 0
+		padding: 40px
+		right: 40%
+		h3
+			color: #535353
+			font-weight: 600
+			text-transform: uppercase
+			font-size: 24px
+			line-height: 1
+		p
+			text-transform: none
+			color: $accent
+	.category-view
+		text-transform: uppercase
+		&:hover
+			color: $light-color
+		&:hover i
+			transform: translateX(10px)
+			color: $light-color
+		i
+			transform: translateX(5px)
+			transition: .3s
+			color: #878787
 		/*==========  user style  ==========*/
 
 @import "media" // Always at the end
