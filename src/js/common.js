@@ -10,5 +10,11 @@ $(document).ready(function () {
 		arrows: false
 	});
 
+	$('.slick-product').slick({
+		infinite: true,
+		slidesToShow: 5,
+		arrows: true
+	});
+
     
 });

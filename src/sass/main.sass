@@ -505,6 +505,97 @@ a
 			transform: translateX(5px)
 			transition: .3s
 			color: #878787
+.section-header
+	text-transform: uppercase
+	font-weight: 300
+.product
+	margin: 100px 0
+	&__item-wrapper
+		margin-top: 30px
+	&-img
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			background: rgba(0,0,0,0.2)
+			transition: .3s
+			opacity: 0
+		&::after
+			content: '\f06e'
+			position: absolute
+			top: 50%
+			left: 50%
+			font-family: "FontAwesome"
+			font-size: 50px
+			color: #ffffff
+			transform: translate(-50%,-70%)
+			transition: .3s
+			opacity: 0
+		&:hover::before
+			opacity: 1
+		&:hover::after
+			opacity: 1
+			transform: translate(-50%,-50%)
+	&-disc
+		text-align: center
+		.product-name
+			font-size: 14px
+			color: #757575
+			font-weight: 600
+			line-height: 20px
+		.price
+			color: #010101
+			font-weight: 600
+			font-size: 17px
+			i
+				font-size: 15px
+	.slick-product
+		&:after
+			content: ''
+			position: absolute
+			top: -45px
+			right: 25px
+			width: 75px
+			height: 40px
+			background-color: #eeeeee
+			border-radius: 20px
+	.slick-arrow
+		background-color: #fff
+		top: -25px
+		border-radius: 50%
+		width: 30px
+		height: 30px
+		z-index: 99
+		transition: .4s
+		&:hover
+			background-color: $light-color
+	.slick-next
+		right: 30px
+		&:hover:before
+			color: #ffffff
+		&:before
+			content: "\f105"
+			font-family: "FontAwesome"
+			color: #000
+			transition: .3s
+	.slick-prev
+		right: 65px
+		left: inherit
+		&:hover:before
+			color: #ffffff
+		&:before
+			content: "\f104"
+			font-family: "FontAwesome"
+			color: #000
+			transition: .3s
+
+.sale
+	background-color: #f8f8f8
+	height: 200px
 		/*==========  user style  ==========*/
 
 @import "media" // Always at the end

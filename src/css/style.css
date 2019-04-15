@@ -6703,7 +6703,6 @@ a:active {
 
 .category .category-view {
   text-transform: uppercase;
-    /*==========  user style  ==========*/;
 }
 
 .category .category-view:hover {
@@ -6719,6 +6718,140 @@ a:active {
   transform: translateX(5px);
   transition: .3s;
   color: #878787;
+}
+
+.section-header {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.product {
+  margin: 100px 0;
+}
+
+.product__item-wrapper {
+  margin-top: 30px;
+}
+
+.product-img {
+  position: relative;
+}
+
+.product-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+  transition: .3s;
+  opacity: 0;
+}
+
+.product-img::after {
+  content: '\f06e';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "FontAwesome";
+  font-size: 50px;
+  color: #ffffff;
+  transform: translate(-50%, -70%);
+  transition: .3s;
+  opacity: 0;
+}
+
+.product-img:hover::before {
+  opacity: 1;
+}
+
+.product-img:hover::after {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.product-disc {
+  text-align: center;
+}
+
+.product-disc .product-name {
+  font-size: 14px;
+  color: #757575;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.product-disc .price {
+  color: #010101;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.product-disc .price i {
+  font-size: 15px;
+}
+
+.product .slick-product:after {
+  content: '';
+  position: absolute;
+  top: -45px;
+  right: 25px;
+  width: 75px;
+  height: 40px;
+  background-color: #eeeeee;
+  border-radius: 20px;
+}
+
+.product .slick-arrow {
+  background-color: #fff;
+  top: -25px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  z-index: 99;
+  transition: .4s;
+}
+
+.product .slick-arrow:hover {
+  background-color: #ff5f5f;
+}
+
+.product .slick-next {
+  right: 30px;
+}
+
+.product .slick-next:hover:before {
+  color: #ffffff;
+}
+
+.product .slick-next:before {
+  content: "\f105";
+  font-family: "FontAwesome";
+  color: #000;
+  transition: .3s;
+}
+
+.product .slick-prev {
+  right: 65px;
+  left: inherit;
+}
+
+.product .slick-prev:hover:before {
+  color: #ffffff;
+}
+
+.product .slick-prev:before {
+  content: "\f104";
+  font-family: "FontAwesome";
+  color: #000;
+  transition: .3s;
+}
+
+.sale {
+  background-color: #f8f8f8;
+  height: 200px;
+  /*==========  user style  ==========*/;
 }
 
 /*==========  Desktop First  ==========*/
