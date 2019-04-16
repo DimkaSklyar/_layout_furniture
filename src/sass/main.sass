@@ -19,7 +19,14 @@ a
 	&:active
 		color: $accent
 		outline: none 0
-
+.custom-col-4
+	+media-breakpoint-down(lg)
+		flex: 0 0 35.66666%
+		max-width: 35.66666%
+.custom-col-8
+	+media-breakpoint-down(lg)
+		flex: 0 0 64.333333%
+		max-width: 64.33333%
 .ta-r
 	text-align: right
 
@@ -31,7 +38,9 @@ a
 
 .row-fix
 	padding: 0 15px
-
+.top-logo-wrap
+	+media-breakpoint-down(lg)
+		margin-bottom: 10px
 .page-header
 	.top-contacts
 		border-bottom: 1px solid #e5e5e5
@@ -107,7 +116,7 @@ a
 			position: relative
 			.header-slide
 				position: absolute
-				top: 50%
+				top: 44%
 				left: 50%
 				transform: translate(-50%,-50%)
 				display: inline-block
@@ -117,16 +126,22 @@ a
 					letter-spacing: 3px
 					margin-bottom: 15px
 					display: inline-block
+					+media-breakpoint-down(lg)
+						font-size: 14px
 				h1
-					font-size: 70px
+					font-size: 4.4em
 					text-transform: uppercase
 					font-weight: 700
 					color: #3b3b3b
+					+media-breakpoint-down(lg)
+						font-size: 3.1em
 				h2
-					font-size: 55px
+					font-size: 3.4em
 					font-weight: 700
 					text-transform: uppercase
 					color: #7a7a7a
+					+media-breakpoint-down(lg)
+						font-size: 2em
 				h1,
 				h2
 					letter-spacing: 2px
@@ -140,6 +155,8 @@ a
 					font-size: 14px
 					color: #7a7a7a
 					margin-bottom: 60px
+					+media-breakpoint-down(lg)
+						margin-bottom: 0
 				.view
 					text-transform: uppercase
 					font-weight: bold
@@ -169,10 +186,13 @@ a
 				left: 50%
 			.header-slide-pos-right
 				left: 72%
+				min-width: 300px
 			.header-slide-pos-left
 				left: 28%
 		.slick-dots
 			bottom: 30px
+			+media-breakpoint-down(lg)
+				bottom: 15px
 			li
 				button
 					&::before
@@ -180,6 +200,9 @@ a
 						border-radius: 50%
 						transition: .3s
 						content: ''
+						+media-breakpoint-down(lg)
+							width: 15px
+							height: 15px
 		&__item
 			&:focus
 				outline: none 0
@@ -195,9 +218,17 @@ a
 		position: relative
 		margin: 0 11px
 		overflow: hidden
+		.banner-img
+			img
+				+media-breakpoint-down(lg)
+					width: 100%
 		.banner-txt
 			position: absolute
+			+media-breakpoint-down(lg)
+				width: 100%
 	.banner-big
+		+media-breakpoint-down(lg)
+			margin-bottom: 25px
 		.banner-txt
 			top: 27%
 			padding: 60px 160px 60px 60px
@@ -229,6 +260,9 @@ a
 				i
 					font-size: 27px
 	.banner-middle
+		img
+			+media-breakpoint-down(lg)
+				margin-bottom: -15px
 		.banner-txt
 			position: absolute
 			top: 0
@@ -303,6 +337,12 @@ a
 				color: #939393
 		&-1
 			margin-bottom: 20px
+			+media-breakpoint-down(lg)
+				margin-bottom: 0
+			img
+				+media-breakpoint-down(lg)
+					margin-bottom: -9px
+					overflow: hidden
 			.banner-txt
 				padding: 30px 20px 30px 10px
 				.pay
@@ -486,6 +526,7 @@ a
 	margin: 60px 0
 	&-wrap
 		position: relative
+		overflow: hidden
 	&-txt
 		position: absolute
 		top: 0
