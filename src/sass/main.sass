@@ -507,7 +507,17 @@ a
 			color: #878787
 .section-header
 	text-transform: uppercase
-	font-weight: 300
+	font-weight: 400
+	color: #292b2c
+.section-header-2
+	font-weight: 600
+	padding-top: 20px
+	& + p
+		letter-spacing: 5px
+		text-transform: uppercase
+		font-weight: bold
+		font-size: 14px
+		color: $accent
 .product
 	margin: 100px 0
 	&__item-wrapper
@@ -595,7 +605,138 @@ a
 
 .sale
 	background-color: #f8f8f8
-	height: 200px
+	padding-top: 30px
+	padding-bottom: 60px
+	&-product-wrap
+		position: relative
+		margin-top: 0px
+		figure
+			position: relative
+			img
+				width: 100%
+			&:before
+				content: ''
+				position: absolute
+				bottom: 0
+				right: 0
+				left: 0
+				top: 0
+				background: rgba(0,0,0,0.1)
+				opacity: 0
+				cursor: pointer
+				transition: .3s
+			&:after
+				content: '\f06e'
+				font-family: "FontAwesome"
+				position: absolute
+				top: 30%
+				left: 50%
+				transform: translate(-50%,-50%)
+				font-size: 60px
+				color: #ffffff
+				transition: .4s
+				opacity: 0
+			&:hover:before
+				opacity: .8
+			&:hover:after
+				opacity: .8
+				top: 50%
+	.name-product
+		font-size: 18px
+		color: $accent
+		font-weight: 600
+		transition: .3s
+		display: inline-block
+		margin-top: 10px
+		&:hover
+			color: $light-color
+	.price-wrap
+		.price
+			color: #010101
+			font-size: 23px
+			font-weight: 600
+		i
+			font-size: 20px
+	.slick-arrow
+		background-color: #ffffff
+		border: 1px solid $accent
+		top: 50%
+		border-radius: 50%
+		width: 45px
+		height: 45px
+		z-index: 99
+		transition: .4s
+		&:hover
+			border-color: $light-color
+	.slick-next
+		&:hover:before
+			color: $light-color
+		&:before
+			content: "\f105"
+			font-family: "FontAwesome"
+			color: #000
+			font-size: 30px
+			transition: .3s
+	.slick-prev
+		&:hover:before
+			color: $light-color
+		&:before
+			content: "\f104"
+			font-family: "FontAwesome"
+			color: #000
+			font-size: 30px
+			transition: .3s
+
+
+.product-cat
+	padding: 60px 0
+	h3
+		margin-bottom: 30px
+		font-size: 22px
+		font-weight: 600
+		letter-spacing: 2px
+		text-transform: capitalize
+		margin-left: 20px
+	.product-item
+		display: flex
+		align-items: center
+		margin-top: 15px
+		figure
+			margin-bottom: 0
+			img
+				width: 100%
+		&-txt
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			min-height: 55px
+	.product-name
+		color: #959596
+		font-weight: 300
+		font-size: 16px
+		transition: .3s
+		&:hover
+			color: $light-color
+	.old-price
+		font-size: 14px
+		color: $accent
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 1px
+			background-color: $accent
+			top: 50%
+			transform: translateY(-50%)
+	.price
+		color: #252528
+		font-size: 18px
+		display: inline-block
+		margin-left: 5px
+		i
+			font-size: 16px
+
 		/*==========  user style  ==========*/
 
 @import "media" // Always at the end
