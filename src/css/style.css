@@ -6604,6 +6604,12 @@ a:active {
   margin-right: 20px;
 }
 
+@media (max-width: 991px) {
+  .banner-product .banner-medium {
+    margin-right: 10px;
+  }
+}
+
 .banner-product .banner-medium-1 {
   margin-bottom: 20px;
   color: #ffffff;
