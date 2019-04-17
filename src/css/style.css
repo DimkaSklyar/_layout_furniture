@@ -6788,12 +6788,26 @@ a:active {
   overflow: hidden;
 }
 
+@media (max-width: 1269px) {
+  .category-wrap img {
+    width: 100%;
+  }
+}
+
 .category-txt {
   position: absolute;
   top: 0;
   bottom: 0;
   padding: 40px;
   right: 40%;
+}
+
+@media (max-width: 1269px) {
+  .category-txt {
+    right: 0;
+    left: 0;
+    padding: 20px;
+  }
 }
 
 .category-txt h3 {
@@ -6849,6 +6863,12 @@ a:active {
 
 .product {
   margin: 100px 0;
+}
+
+@media (max-width: 1269px) {
+  .product {
+    margin: 40px 0;
+  }
 }
 
 .product__item-wrapper {
