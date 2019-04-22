@@ -31,7 +31,19 @@
 		<div class="top-navigation">
 			<div class="container">
 				<div class="row justify-content-between align-items-baseline">
-					<div class="col-xl-2 ta-c top-logo-wrap">
+					<div class="col-2 col-sm-1 mobile-menu-wrapper flex-first d-md-none d-block">
+						<a href="#" id="touch-menu">
+							<div id="nav-icon2">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-2 ta-c top-logo-wrap col-10 col-md-12">
 						<a href="index.html" title="Главная" class="top-logo-href">
 							<div class="top-logo ta-c">
 								<strong>LeoLux<span>.</span></strong>
@@ -40,7 +52,7 @@
 					</div>
 					<div class="col-xl-8 ta-c">
 						<nav class="top-nav">
-							<ul class="d-flex justify-content-center">
+							<ul class="d-flex justify-content-md-center flex-md-row flex-column align-items-start">
 								<li><a href="index.html">Главная</a></li>
 								<li><a href="#">Каталог</a></li>
 								<li><a href="#">Доставка и оплата</a></li>
@@ -63,7 +75,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="slick-slider">
+		<div class="slick-slider d-none d-md-block">
 			<div class="slick-slider__item">
 				<div class="slick-slider-wrap">
 					<div class="image-slide">
@@ -266,11 +278,11 @@
 				</div>
 			</div>
 		</section>
-		<section class="advantage">
+		<section class="advantage d-lg-block d-none">
 			<div class="container">
-				<div class="row justify-content-between">
-					<div class="col-3">
-						<div class="advantage-wrap d-flex">
+				<div class="row justify-content-between ">
+					<div class="col-lg-3 col-md-6">
+						<div class="advantage-wrap d-lg-flex">
 							<i class="fa fa-plane" aria-hidden="true"></i>
 							<div class="advantage-txt">
 								<strong>header</strong>
@@ -278,8 +290,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-3">
-						<div class="advantage-wrap d-flex">
+					<div class="col-lg-3 col-md-6">
+						<div class="advantage-wrap d-lg-flex">
 							<i class="fa fa-life-ring" aria-hidden="true"></i>
 							<div class="advantage-txt">
 								<strong>header</strong>
@@ -287,8 +299,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-3">
-						<div class="advantage-wrap d-flex">
+					<div class="col-lg-3 col-md-6">
+						<div class="advantage-wrap d-lg-flex">
 							<i class="fa fa-dropbox" aria-hidden="true"></i>
 							<div class="advantage-txt">
 								<strong>header</strong>
@@ -296,8 +308,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-3">
-						<div class="advantage-wrap d-flex no-border">
+					<div class="col-lg-3 col-md-6">
+						<div class="advantage-wrap d-lg-flex no-border">
 							<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
 							<div class="advantage-txt">
 								<strong>header</strong>
@@ -312,7 +324,7 @@
 		<section class="category">
 			<div class="container">
 				<div class="row no-gutters row-fix">
-					<div class="col-4">
+					<div class="col-lg-4 col-12">
 						<div class="category-wrap">
 							<figure><img src="img/category1.jpg" alt=""></figure>
 							<div class="category-txt d-flex fd-column justify-content-xl-between">
@@ -322,7 +334,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-lg-4 col-12">
 						<div class="category-wrap">
 							<figure><img src="img/category2.jpg" alt=""></figure>
 							<div class="category-txt d-flex fd-column justify-content-xl-between">
@@ -332,7 +344,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-lg-4 col-12">
 						<div class="category-wrap">
 							<figure><img src="img/category3.jpg" alt=""></figure>
 							<div class="category-txt d-flex fd-column justify-content-xl-between">
@@ -620,7 +632,7 @@
 		<section class="product-cat">
 			<div class="container">
 				<div class="row row-fix no-gutters">
-					<div class="col">
+					<div class="col-lg-3 col-sm-6">
 						<h3>Распродажа</h3>
 						<div class="product-cat-wrap">
 							<div class="product-item">
@@ -661,7 +673,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col">
+					<div class="col-lg-3 col-sm-6">
 						<h3>Популярное</h3>
 						<div class="product-cat-wrap">
 							<div class="product-item">
@@ -702,7 +714,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col">
+					<div class="col-lg-3 col-sm-6">
 						<h3>Скидки</h3>
 						<div class="product-cat-wrap">
 							<div class="product-item">
@@ -743,7 +755,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col">
+					<div class="col-lg-3 col-sm-6">
 						<h3>Лидеры продаж</h3>
 						<div class="product-cat-wrap">
 							<div class="product-item">
@@ -792,7 +804,7 @@
 	<footer class="page-footer">
 		<div class="container">
 			<div class="row row-fix">
-				<div class="col-4">
+				<div class="col-lg-4 col-md-6">
 					<a href="index.html" title="Главная" class="bottom-logo-href">
 						<div class="bottom-logo">
 							<strong>LeoLux<span>.</span></strong>
@@ -810,7 +822,7 @@
 						<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="#">leolux@list.ru</a></li>
 					</ul>
 				</div>
-				<div class="col-2">
+				<div class="col-lg-2 col-md-6">
 					<h3>Категории</h3>
 					<ul class="footer-category">
 						<li><a href="#">Корпусная мебель</a></li>
@@ -818,8 +830,8 @@
 						<li><a href="#">Мягкая мебель для дома</a></li>
 					</ul>
 				</div>
-				<div class="col-2">
-					<h3>Навигация</h3>
+				<div class="col-lg-2 col-6">
+					<h3 class="nav-h">Навигация</h3>
 					<ul class="footer-category">
 						<li><a href="#">Главная</a></li>
 						<li><a href="#">Каталог</a></li>
@@ -828,7 +840,7 @@
 						<li><a href="#">Контакты</a></li>
 					</ul>
 				</div>
-				<div class="col-3">
+				<div class="col-lg-3 col-md-6">
 					<div class="subscib ta-r">
 						<h3>Подписка</h3>
 						<p>Оставьте свой e-mail адрес и будьте в курсе всех скидок</p>
