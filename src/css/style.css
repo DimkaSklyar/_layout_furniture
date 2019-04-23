@@ -6256,6 +6256,11 @@ a:active {
   height: 50px;
   font-family: 'Monoton', cursive;
   font-size: 40px;
+  transition: .3s;
+}
+
+.page-header .top-navigation .top-logo:hover {
+  color: #ff5f5f;
 }
 
 .page-header .top-navigation .top-logo strong {
@@ -6419,7 +6424,7 @@ a:active {
   margin-top: 30px;
   font-size: 14px;
   color: #7a7a7a;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 1269px) {
@@ -6475,7 +6480,7 @@ a:active {
 
 .page-header .slick-slider-wrap .header-slide-pos-right {
   left: 72%;
-  min-width: 300px;
+  min-width: 600px;
 }
 
 .page-header .slick-slider-wrap .header-slide-pos-left {
@@ -7222,6 +7227,11 @@ a:active {
   color: #757575;
   font-weight: 600;
   line-height: 20px;
+  transition: .3s;
+}
+
+.product-disc .product-name:hover {
+  color: #ff5f5f;
 }
 
 .product-disc .price {
@@ -7445,8 +7455,13 @@ a:active {
   margin-bottom: 0;
 }
 
+.product-cat .product-item figure:hover img {
+  transform: scale(1.2);
+}
+
 .product-cat .product-item figure img {
   width: 100%;
+  transition: .3s;
 }
 
 .product-cat .product-item-txt {
@@ -7496,6 +7511,14 @@ a:active {
 
 .page-footer {
   background-color: #f6f6f6;
+}
+
+.page-footer a {
+  transition: .3s;
+}
+
+.page-footer a:hover {
+  color: #ff5f5f;
 }
 
 .page-footer .container {

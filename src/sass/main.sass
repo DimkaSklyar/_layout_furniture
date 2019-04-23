@@ -63,6 +63,9 @@ a
 			height: 50px
 			font-family: 'Monoton', cursive
 			font-size: 40px
+			transition: .3s
+			&:hover
+				color: $light-color
 			strong
 				font-weight: normal
 				span
@@ -164,7 +167,7 @@ a
 					margin-top: 30px
 					font-size: 14px
 					color: #7a7a7a
-					margin-bottom: 60px
+					margin-bottom: 30px
 					+media-breakpoint-down(lg)
 						margin-bottom: 0
 					+media-breakpoint-down(md)
@@ -198,7 +201,7 @@ a
 				left: 50%
 			.header-slide-pos-right
 				left: 72%
-				min-width: 300px
+				min-width: 600px
 			.header-slide-pos-left
 				left: 28%
 		.slick-dots
@@ -666,6 +669,9 @@ a
 			color: #757575
 			font-weight: 600
 			line-height: 20px
+			transition: .3s
+			&:hover
+				color: #ff5f5f
 		.price
 			color: #010101
 			font-weight: 600
@@ -818,8 +824,11 @@ a
 		margin-top: 15px
 		figure
 			margin-bottom: 0
+			&:hover img
+				transform: scale(1.2)
 			img
 				width: 100%
+				transition: .3s
 		&-txt
 			display: flex
 			flex-direction: column
@@ -855,6 +864,10 @@ a
 
 .page-footer
 	background-color: #f6f6f6
+	a
+		transition: .3s
+		&:hover
+			color: $light-color
 	.container
 		// border-top: 1px solid #e8e8e8
 		padding: 60px 0 80px
