@@ -6771,6 +6771,20 @@ a:active {
   text-align: right;
 }
 
+.btn-form {
+  background-color: #ff5f5f;
+  outline: 0 none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-top: 30px;
+}
+
 .ta-c {
   text-align: center;
 }
@@ -6880,17 +6894,21 @@ a:active {
   }
 }
 
-.page-header .top-navigation .top-nav ul {
+.page-header .top-navigation .top-nav .menu {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.page-header .top-navigation .top-nav ul li:last-child a {
+.page-header .top-navigation .top-nav .menu > li {
+  position: relative;
+}
+
+.page-header .top-navigation .top-nav .menu > li:last-child a {
   margin-right: 0;
 }
 
-.page-header .top-navigation .top-nav ul li a {
+.page-header .top-navigation .top-nav .menu > li a {
   display: block;
   margin-right: 35px;
   text-transform: uppercase;
@@ -6900,10 +6918,36 @@ a:active {
   font-size: 16px;
 }
 
-.page-header .top-navigation .top-nav ul li a:hover {
+.page-header .top-navigation .top-nav .menu > li a:hover {
   color: #ff5f5f;
   transform: translateY(-2px);
   text-shadow: 1px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.page-header .top-navigation .top-nav .menu .withsubmenu:hover .submenu {
+  opacity: 1;
+  z-index: 99;
+}
+
+.page-header .top-navigation .top-nav .submenu {
+  position: absolute;
+  z-index: -1;
+  width: 300px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  opacity: 0;
+  transition: .3s;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 1px 20px 30px 0px rgba(255, 169, 95, 0.37);
+  border-radius: 10px;
+  border-top: 10px solid transparent;
+}
+
+.page-header .top-navigation .top-nav .submenu li {
+  margin-top: 15px;
 }
 
 .page-header .slick-slider-wrap {
@@ -8236,6 +8280,187 @@ a:active {
 .page-footer .footer-social-wrap .footer-social li {
   margin-left: 10px;
   font-size: 20px;
+}
+
+.form-dialog {
+  text-align: left;
+  max-width: 330px;
+  padding: 15px;
+  margin: 40px auto;
+  position: relative;
+  background-color: #fff;
+}
+
+#form-callback {
+  text-align: center;
+  padding: 40px 15px;
+}
+
+#form-callback h2 {
+  text-transform: uppercase;
+  font-size: 1.7em;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+#form-callback h2:before {
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 1px;
+  background-color: red;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#form-callback ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#form-callback ol input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #cecece;
+  color: #000;
+  border-radius: 5px;
+}
+
+#form-callback ol input:focus {
+  outline-color: #cecece;
+  border-radius: 5px;
+}
+
+#form-callback button.btn {
+  border: none;
+  outline: none 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #f93637;
+  color: #fff;
+  margin-top: 20px;
+}
+
+#small-dialog {
+  max-width: 1230px;
+  max-height: 60%;
+  padding: 0;
+  overflow: hidden;
+}
+
+#small-dialog .order {
+  padding: 0;
+}
+
+#small-dialog .order-form {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 10;
+  transform: translateX(615px);
+  transition: 1s;
+}
+
+#small-dialog .order .active {
+  transform: translateX(0);
+}
+
+#small-dialog .order-img-wrap img {
+  width: 100%;
+}
+
+#small-dialog .order-inner {
+  background-color: #f6f6f6;
+  padding: 60px 20px 40px;
+  position: relative;
+}
+
+#small-dialog .order-wrap {
+  height: 100%;
+}
+
+#small-dialog .order-wrap h2 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: 200;
+  position: relative;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+#small-dialog .order-wrap h2:before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #a0a0a0;
+}
+
+#small-dialog .order-wrap p {
+  margin-top: 40px;
+  color: #808080;
+}
+
+#small-dialog .order-pay {
+  border-top: 1px solid #a0a0a0;
+  padding-top: 30px;
+}
+
+#small-dialog .order-pay .price-wrap {
+  margin-bottom: 15px;
+  font-size: 36px;
+}
+
+#small-dialog .order-pay .price-wrap i {
+  font-size: 33px;
+}
+
+#small-dialog .order-pay #quanty {
+  border-radius: 25px;
+  width: 60px;
+  font-size: 1.7em;
+  outline: none 0;
+  border: none;
+  padding-left: 10px;
+  border: 1px solid #eceaea;
+  color: #808080;
+  margin-left: 20px;
+}
+
+#small-dialog .order-pay .help-col {
+  font-size: 1.7em;
+  color: #808080;
+  font-weight: 100;
+}
+
+#small-dialog .order-pay .btn-order {
+  width: 173px;
+  padding: 12px 10px 13px;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.25s linear;
+  background: #ff8283;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+#small-dialog .order-pay .btn-order:hover {
+  background-color: #000;
 }
 
 /*==========  Desktop First  ==========*/

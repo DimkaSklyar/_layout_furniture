@@ -22,8 +22,26 @@
 						<a href="mailto:example@example.ru" class="top-contacts__item">example@example.ru</a>
 					</div>
 					<div class="col-6 ta-r">
-						<a href="#" class="top-contacts__item">Заказать звонок</a>
-						<a href="https://yandex.ru/map-widget/v1/?um=constructor%3A949863e00f1903c77cd143206fad3b5afe5f3af0e3fabd2a417c951979c12ae6&amp;source=constructor" class="top-contacts__item popup-gmaps">Показать на карте</a>
+						<a href="#form-callback" class="top-contacts__item popup-with-form">Заказать звонок</a>
+						<form id="form-callback" class="mfp-hide white-popup-block form-dialog">
+							<h2>Заказать звонок</h2>
+							<fieldset style="border:0;">
+								<p>Оставте ваш номер <br>мы вам перезвоним</p>
+								<ol>
+									<li>
+										<input id="name" name="name" type="text" placeholder="Имя" required="">
+									</li>
+									<li>
+										<input id="phone" name="phone" type="tel" placeholder="+7 (999) 99-99-999" required="">
+									</li>
+								</ol>
+							</fieldset>
+							<div id="messegeResult-callback">
+								<button id="submit-form-z" type="submit" form="form-callback" class="btn-form">Отправить</button>
+							</div>
+						</form>
+						<a href="https://yandex.ru/map-widget/v1/?um=constructor%3A949863e00f1903c77cd143206fad3b5afe5f3af0e3fabd2a417c951979c12ae6&amp;source=constructor"
+							class="top-contacts__item popup-gmaps">Показать на карте</a>
 					</div>
 				</div>
 			</div>
@@ -52,9 +70,15 @@
 					</div>
 					<div class="col-xl-8 ta-c">
 						<nav class="top-nav">
-							<ul class="d-flex justify-content-md-center flex-md-row flex-column align-items-start">
+							<ul class="d-flex justify-content-md-center flex-md-row flex-column align-items-start menu">
 								<li><a href="index.html">Главная</a></li>
-								<li><a href="catalog.html">Каталог</a></li>
+								<li class="withsubmenu"><a href="#">Каталог</a>
+									<ul class="submenu">
+										<li><a href="category-1.html">Корпусная мебель</a></li>
+										<li><a href="category-2.html">Мягкая мебель</a></li>
+										<li><a href="category-3.html">Свет и текстиль</a></li>
+									</ul>
+								</li>
 								<li><a href="deliverypay.html">Доставка и оплата</a></li>
 								<li><a href="about.html">О нас</a></li>
 								<li><a href="contacts.html">Контакты</a></li>
@@ -64,11 +88,12 @@
 					<div class="col-xl-2 d-none d-xl-block">
 						<div class="top-social">
 							<ul>
-								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="https://vk.com"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.instagram.com/leo_lux_mebel/"><i class="fa fa-instagram"
+											aria-hidden="true"></i></a></li>
+								<li><a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+								<li><a href="https://plus.google.com/"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -86,10 +111,11 @@
 						<h1>Светильники</h1>
 						<h2>от ведущих брендов</h2>
 						<div class="slide-description">
-							<p>В наличии освещение для гостиной по цене от 85 рублей. Более 60 000 предметов мебели и интерьера. 390+
+							<p>В наличии освещение для гостиной по цене от 85 рублей. Более 60 000 предметов мебели и
+								интерьера. 390+
 								брендов красивой и дизайнерской мебели.</p>
 						</div>
-						<a href="#" class="view">Подробнее</a>
+						<a href="catalog.html" class="view">Подробнее</a>
 					</div>
 				</div>
 			</div>
@@ -105,7 +131,7 @@
 						<div class="slide-description">
 							<p>Всегда в наличие. Дизайнерская мебель для гостинных и спален.</p>
 						</div>
-						<a href="#" class="view">Подробнее</a>
+						<a href="catalog.html" class="view">Подробнее</a>
 					</div>
 				</div>
 			</div>
@@ -121,7 +147,7 @@
 						<div class="slide-description">
 							<p>Наши дизайнеры воплотят в жизнь ваши самые смелые идеи</p>
 						</div>
-						<a href="#" class="view">Подробнее</a>
+						<a href="catalog.html" class="view">Подробнее</a>
 					</div>
 				</div>
 			</div>
@@ -152,10 +178,12 @@
 								<strong class="title">Софа и диван</strong>
 								<h3>Диван Аманда</h3>
 								<div class="price-wrap">
-									<span class="old-price"><i class="fa fa-rub" aria-hidden="true"></i> 19 999.00</span>
+									<span class="old-price"><i class="fa fa-rub" aria-hidden="true"></i> 19
+										999.00</span>
 									<div class="price"><i class="fa fa-rub" aria-hidden="true"></i>15 999.00</div>
 								</div>
-								<a href="#" class="banner-view">Подробнее <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+								<a href="#small-dialog" class="banner-view popup-with-move-anim">Подробнее <i class="fa fa-arrow-right"
+										aria-hidden="true"></i></a>
 							</div>
 						</div>
 					</div>
@@ -181,7 +209,8 @@
 										<div class="pay">
 											<div class="old-price"><i class="fa fa-rub" aria-hidden="true"></i> 7 999.00
 											</div>
-											<div class="price"><i class="fa fa-rub" aria-hidden="true"></i>6 999.00</div>
+											<div class="price"><i class="fa fa-rub" aria-hidden="true"></i>6 999.00
+											</div>
 											<a href="#">Подробнее <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
 										</div>
 									</div>
@@ -224,9 +253,12 @@
 									<h3>Кресло</h3>
 									<h4>Мадейра</h4>
 									<div class="slide-description">
-										<p>Кресло Мадейра украсит собой домашнюю лаунж-зону или уголок для чтения. Спинка, дополненная
-											пышной подушкой, позволит полностью расслабиться при просмотре любимого сериала или спортивного
-											матча. Для достижения максимального комфорта в подушке сиденья использована многослойная
+										<p>Кресло Мадейра украсит собой домашнюю лаунж-зону или уголок для чтения.
+											Спинка, дополненная
+											пышной подушкой, позволит полностью расслабиться при просмотре любимого
+											сериала или спортивного
+											матча. Для достижения максимального комфорта в подушке сиденья использована
+											многослойная
 											конструкция мягких элементов.
 										</p>
 									</div>
@@ -240,8 +272,10 @@
 									<h3>Стул</h3>
 									<h4>Movie</h4>
 									<div class="slide-description">
-										<p>Удовольствие от трапезы за кухонным столом во многом зависит от качества кухонных стульев. При
-											выборе важно все, в том числе материал обивки. Кухонные стулья с тканевой обивкой сиденья и спинки
+										<p>Удовольствие от трапезы за кухонным столом во многом зависит от качества
+											кухонных стульев. При
+											выборе важно все, в том числе материал обивки. Кухонные стулья с тканевой
+											обивкой сиденья и спинки
 											практичны, комфортны и гигиеничны.
 										</p>
 									</div>
@@ -255,7 +289,8 @@
 									<h3>Декаративные</h3>
 									<h4>Ломатки</h4>
 									<div class="slide-description">
-										<p>Весла деревянные декоративные для интерьера, состаренные, цвет "Калужница", защитное покрытие - 4
+										<p>Весла деревянные декоративные для интерьера, состаренные, цвет "Калужница",
+											защитное покрытие - 4
 											слоя акрилового лака. Возможно добавление рисунка или надписи.
 										</p>
 									</div>
@@ -269,8 +304,10 @@
 									<h3>Стул</h3>
 									<h4>Kokong</h4>
 									<div class="slide-description">
-										<p>Материал представляет собой текстильную основу с полимерным покрытием. Благодаря эластичности,
-											водонепроницаемости, стойкости к заломам, она становится бюджетным аналогом натуральным
+										<p>Материал представляет собой текстильную основу с полимерным покрытием.
+											Благодаря эластичности,
+											водонепроницаемости, стойкости к заломам, она становится бюджетным аналогом
+											натуральным
 											материалам.
 										</p>
 									</div>
@@ -334,7 +371,8 @@
 							<div class="category-txt d-flex fd-column justify-content-xl-between">
 								<h3>Корпусная мебель</h3>
 								<p>для дома и офиса</p>
-								<a href="#" class="category-view">Смотреть <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+								<a href="category-1.html" class="category-view">Смотреть <i class="fa fa-arrow-right"
+										aria-hidden="true"></i></a>
 							</div>
 						</div>
 					</div>
@@ -343,8 +381,9 @@
 							<figure><img src="img/category2.jpg" alt=""></figure>
 							<div class="category-txt d-flex fd-column justify-content-xl-between">
 								<h3>Мягкая мебель</h3>
-								<p>для офисов, кафе</p>
-								<a href="#" class="category-view">Смотреть <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+								<p>для дома и офисов</p>
+								<a href="category-2.html" class="category-view">Смотреть <i class="fa fa-arrow-right"
+										aria-hidden="true"></i></a>
 							</div>
 						</div>
 					</div>
@@ -352,9 +391,10 @@
 						<div class="category-wrap">
 							<figure><img src="img/category3.jpg" alt=""></figure>
 							<div class="category-txt d-flex fd-column justify-content-xl-between">
-								<h3>Мягкая мебель</h3>
+								<h3>Свет и текстиль</h3>
 								<p>для дома</p>
-								<a href="#" class="category-view">Смотреть <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+								<a href="category-3.html" class="category-view">Смотреть <i class="fa fa-arrow-right"
+										aria-hidden="true"></i></a>
 							</div>
 						</div>
 					</div>
@@ -405,7 +445,7 @@
 							<div class="product__item-wrapper">
 								<a href="#">
 									<div class="product-img">
-										<figure><img src="img/products/product3.jpg" alt=""></figure>
+										<figure><img src="img/products/product3_1.jpg" alt=""></figure>
 									</div>
 								</a>
 								<div class="product-disc">
@@ -419,7 +459,7 @@
 							<div class="product__item-wrapper">
 								<a href="#">
 									<div class="product-img">
-										<figure><img src="img/products/product4.jpg" alt=""></figure>
+										<figure><img src="img/products/product4_1.jpg" alt=""></figure>
 									</div>
 								</a>
 								<div class="product-disc">
@@ -646,7 +686,8 @@
 								<div class="product-item-txt col-7">
 									<a href="#" class="product-name">Кресл-глайдер Комфорт</a>
 									<div class="price-wrap">
-										<span class="old-price"><i class="fa fa-rub" aria-hidden="true"></i> 12 500</span>
+										<span class="old-price"><i class="fa fa-rub" aria-hidden="true"></i> 12
+											500</span>
 										<span class="price"><i class="fa fa-rub" aria-hidden="true"></i> 10 500</span>
 									</div>
 								</div>
@@ -658,14 +699,15 @@
 								<div class="product-item-txt col-7">
 									<a href="#" class="product-name">Стул Lilou</a>
 									<div class="price-wrap">
-										<span class="old-price"><i class="fa fa-rub" aria-hidden="true"></i> 4 100</span>
+										<span class="old-price"><i class="fa fa-rub" aria-hidden="true"></i> 4
+											100</span>
 										<span class="price"><i class="fa fa-rub" aria-hidden="true"></i>3 756</span>
 									</div>
 								</div>
 							</div>
 							<div class="product-item">
 								<a href="#" class="col-5">
-									<figure><img src="img/products/product3.jpg" alt=""></figure>
+									<figure><img src="img/products/product3_1.jpg" alt=""></figure>
 								</a>
 								<div class="product-item-txt col-7">
 									<a href="#" class="product-name">Стул Авиньон</a>
@@ -682,12 +724,13 @@
 						<div class="product-cat-wrap">
 							<div class="product-item">
 								<a href="#" class="col-5">
-									<figure><img src="img/products/product4.jpg" alt=""></figure>
+									<figure><img src="img/products/product4_1.jpg" alt=""></figure>
 								</a>
 								<div class="product-item-txt col-7">
 									<a href="#" class="product-name">Стул Liluo</a>
 									<div class="price-wrap">
-										<span class="old-price"><i class="fa fa-rub" aria-hidden="true"></i> 2 999</span>
+										<span class="old-price"><i class="fa fa-rub" aria-hidden="true"></i> 2
+											999</span>
 										<span class="price"><i class="fa fa-rub" aria-hidden="true"></i> 1 756</span>
 									</div>
 								</div>
@@ -711,7 +754,8 @@
 								<div class="product-item-txt col-7">
 									<a href="#" class="product-name">Стул Gurda</a>
 									<div class="price-wrap">
-										<span class="old-price"><i class="fa fa-rub" aria-hidden="true"></i> 3 000</span>
+										<span class="old-price"><i class="fa fa-rub" aria-hidden="true"></i> 3
+											000</span>
 										<span class="price"><i class="fa fa-rub" aria-hidden="true"></i> 1 756</span>
 									</div>
 								</div>
@@ -728,7 +772,8 @@
 								<div class="product-item-txt col-7">
 									<a href="#" class="product-name">Стул Manuel</a>
 									<div class="price-wrap">
-										<span class="old-price"><i class="fa fa-rub" aria-hidden="true"></i> 8 999</span>
+										<span class="old-price"><i class="fa fa-rub" aria-hidden="true"></i> 8
+											999</span>
 										<span class="price"><i class="fa fa-rub" aria-hidden="true"></i> 5 699</span>
 									</div>
 								</div>
@@ -740,7 +785,8 @@
 								<div class="product-item-txt col-7">
 									<a href="#" class="product-name">Кресло-глайдер Комфорт</a>
 									<div class="price-wrap">
-										<span class="old-price"><i class="fa fa-rub" aria-hidden="true"></i> 12 500</span>
+										<span class="old-price"><i class="fa fa-rub" aria-hidden="true"></i> 12
+											500</span>
 										<span class="price"><i class="fa fa-rub" aria-hidden="true"></i> 10 500</span>
 									</div>
 								</div>
@@ -752,7 +798,8 @@
 								<div class="product-item-txt col-7">
 									<a href="#" class="product-name">Стул Ёж</a>
 									<div class="price-wrap">
-										<span class="old-price"><i class="fa fa-rub" aria-hidden="true"></i>10 999</span>
+										<span class="old-price"><i class="fa fa-rub" aria-hidden="true"></i>10
+											999</span>
 										<span class="price"><i class="fa fa-rub" aria-hidden="true"></i> 8 999</span>
 									</div>
 								</div>
@@ -769,7 +816,8 @@
 								<div class="product-item-txt col-7">
 									<a href="#" class="product-name">Кресло Petra</a>
 									<div class="price-wrap">
-										<span class="old-price"><i class="fa fa-rub" aria-hidden="true"></i> 10 699</span>
+										<span class="old-price"><i class="fa fa-rub" aria-hidden="true"></i> 10
+											699</span>
 										<span class="price"><i class="fa fa-rub" aria-hidden="true"></i> 8 599</span>
 									</div>
 								</div>
@@ -781,7 +829,8 @@
 								<div class="product-item-txt col-7">
 									<a href="#" class="product-name">Кресло Larje</a>
 									<div class="price-wrap">
-										<span class="old-price"><i class="fa fa-rub" aria-hidden="true"></i> 5 999</span>
+										<span class="old-price"><i class="fa fa-rub" aria-hidden="true"></i> 5
+											999</span>
 										<span class="price"><i class="fa fa-rub" aria-hidden="true"></i> 3 999</span>
 									</div>
 								</div>
@@ -793,7 +842,8 @@
 								<div class="product-item-txt col-7">
 									<a href="#" class="product-name">Стул Lilou</a>
 									<div class="price-wrap">
-										<span class="old-price"><i class="fa fa-rub" aria-hidden="true"></i> 4 999</span>
+										<span class="old-price"><i class="fa fa-rub" aria-hidden="true"></i> 4
+											999</span>
 										<span class="price"><i class="fa fa-rub" aria-hidden="true"></i> 3 756</span>
 									</div>
 								</div>
@@ -858,17 +908,63 @@
 					<div class="footer-social-wrap ta-r">
 						<h3>Мы в социальных сетях</h3>
 						<ul class="footer-social">
-							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="https://vk.com"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.instagram.com/leo_lux_mebel/"><i class="fa fa-instagram"
+										aria-hidden="true"></i></a></li>
+							<li><a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+							</li>
+							<li><a href="https://plus.google.com/"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
+
+
+	<div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+		<div class="container order">
+			<div class="row">
+				<div class="col-6">
+					<figure class="order-img-wrap">
+						<img src="img/products/product1.jpg" alt="">
+					</figure>
+				</div>
+				<div class="col-6 order-inner">
+					<div class="order-wrap d-flex flex-column justify-content-between">
+						<div class="order-description">
+							<h2>Заголовок</h2>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima deserunt debitis ex
+								possimus doloribus
+								quia consequatur facilis delectus dolorum illo asperiores repellat, quidem iste, tempore
+								consequuntur
+								porro deleniti aliquam amet!</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, molestiae? Quaerat
+								maxime
+								exercitationem cumque, consectetur porro iste, inventore voluptas enim voluptates
+								laboriosam id est sed
+								facilis tempora nesciunt, modi eum?</p>
+						</div>
+						<div class="order-pay">
+							<div class="price-wrap">
+								<span class="price">1000</span> <i class="fa fa-rub" aria-hidden="true"></i>
+							</div>
+							<div class="d-flex align-items-end">
+								<span class="help-col">Кол-во: </span>
+								<input type="number" name="quanty" id="quanty" value="1" min="1">
+								<a href="#p" class="btn-order" id="pay">Заказать</a>
+							</div>
+						</div>
+					</div>
+					<div class="order-form">
+						<h2>Оформить заказ</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="js/scripts.min.js"></script>
 </body>
 

@@ -30,10 +30,20 @@ a
 		max-width: 64.33333%
 .ta-r
 	text-align: right
-
+.btn-form
+	background-color: #ff5f5f
+	outline: 0 none
+	border: none
+	border-radius: 5px
+	padding: 10px 15px
+	cursor: pointer
+	text-transform: uppercase
+	color: #ffffff
+	font-weight: bold
+	letter-spacing: 3px
+	margin-top: 30px
 .ta-c
 	text-align: center
-
 .fd-column
 	flex-direction: column
 .mobile-menu-wrapper
@@ -99,11 +109,12 @@ a
 		.top-nav
 			+media-breakpoint-down(sm)
 				display: none
-			ul
+			.menu
 				list-style: none
 				margin: 0
 				padding: 0
-				li
+				& > li
+					position: relative
 					&:last-child a
 						margin-right: 0
 					a
@@ -118,6 +129,28 @@ a
 							color: $light-color
 							transform: translateY(-2px)
 							text-shadow: 1px 5px 3px rgba(0, 0, 0, 0.2)
+				.withsubmenu
+					&:hover .submenu
+						opacity: 1
+						z-index: 99
+			.submenu
+				position: absolute
+				z-index: -1
+				width: 300px
+				list-style: none
+				margin: 0
+				padding: 0
+				background-color: #fff
+				opacity: 0
+				transition: .3s
+				padding: 20px
+				text-align: left
+				box-shadow: 1px 20px 30px 0px rgba(255, 169, 95, 0.37)
+				border-radius: 10px
+				border-top: 10px solid transparent
+				li
+					margin-top: 15px
+
 	.slick-slider
 		&-wrap
 			position: relative
@@ -962,9 +995,139 @@ a
 			li
 				margin-left: 10px
 				font-size: 20px
+.form-dialog
+  text-align: left
+  max-width: 330px
+  padding: 15px
+  margin: 40px auto
+  position: relative
+  background-color: #fff
+#form-callback
+  text-align: center
+  padding: 40px 15px
+  h2
+    text-transform: uppercase
+    font-size: 1.7em
+    position: relative
+    padding-bottom: 10px
+    &:before
+      position: absolute
+      content: ''
+      width: 30px
+      height: 1px
+      background-color: red
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+  ol
+    list-style: none
+    padding: 0
+    margin: 0
+    input
+      padding: 10px
+      margin-bottom: 10px
+      border: 1px solid #cecece
+      color: #000
+      border-radius: 5px
+      &:focus
+        outline-color: #cecece
+        border-radius: 5px
+  button.btn
+    border: none
+    outline: none 0
+    text-transform: uppercase
+    letter-spacing: 1px
+    background-color: #f93637
+    color: #fff
+    margin-top: 20px
 
-
-
+#small-dialog
+	max-width: 1230px
+	max-height: 60%
+	padding: 0
+	overflow: hidden
+	.order
+		padding: 0
+		&-form
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			background-color: #fff
+			z-index: 10
+			transform: translateX(615px)
+			transition: 1s
+		.active
+			transform: translateX(0)
+		&-img-wrap
+			img
+				width: 100%
+		&-inner
+			background-color: #f6f6f6
+			padding: 60px 20px 40px
+			position: relative
+		&-wrap
+			height: 100%
+			h2
+				text-transform: uppercase
+				font-size: 2.5em
+				font-weight: 200
+				position: relative
+				margin-bottom: 30px
+				color: #000
+				&:before
+					position: absolute
+					content: ''
+					bottom: 0
+					height: 1px
+					width: 100%
+					background-color: $accent
+			p
+				margin-top: 40px
+				color: #808080
+		&-pay
+			border-top: 1px solid $accent
+			padding-top: 30px
+			.price-wrap
+				margin-bottom: 15px
+				font-size: 36px
+				i
+					font-size: 33px
+			#quanty
+				border-radius: 25px
+				width: 60px
+				font-size: 1.7em
+				outline: none 0
+				border: none
+				padding-left: 10px
+				border: 1px solid #eceaea
+				color: #808080
+				margin-left: 20px
+			.help-col
+				font-size: 1.7em
+				color: #808080
+				font-weight: 100
+			.btn-order
+				width: 173px
+				padding: 12px 10px 13px
+				text-align: center
+				text-transform: uppercase
+				display: inline-block
+				font-size: 14px
+				line-height: 20px
+				font-family: "Montserrat", sans-serif
+				font-weight: 700
+				border: none
+				outline: none
+				border-radius: 25px
+				transition: all 0.25s linear
+				background: #ff8283
+				color: #fff
+				cursor: pointer
+				margin-left: 40px
+				&:hover
+					background-color: #000
 
 
 @import "media" // Always at the end

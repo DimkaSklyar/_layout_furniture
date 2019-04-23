@@ -725,6 +725,7 @@ MagnificPopup.prototype = {
 
 			// We close the popup if click is on close button or on preloader. Or if there is no content.
 			if(!mfp.content || $(target).hasClass('mfp-close') || (mfp.preloader && target === mfp.preloader[0]) ) {
+				$('.order-form').removeClass('active');
 				return true;
 			}
 
