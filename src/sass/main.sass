@@ -44,6 +44,8 @@ a
 	margin-top: 30px
 .ta-c
 	text-align: center
+.m-0
+	margin: 0
 .fd-column
 	flex-direction: column
 .mobile-menu-wrapper
@@ -1043,11 +1045,23 @@ a
 
 #small-dialog
 	max-width: 1230px
-	max-height: 60%
+	height: auto
 	padding: 0
 	overflow: hidden
+	+media-breakpoint-down(lg)
+		max-width: 970px
+	+media-breakpoint-down(md)
+		max-width: 767px
+	+media-breakpoint-down(sm)
+		max-width: 713px
+		min-width: 500px
 	.order
 		padding: 0
+		.close
+			position: absolute
+			top: 2px
+			font-size: 27px
+			cursor: pointer
 		&-form
 			padding: 60px 40px 40px 20px
 			position: absolute
@@ -1097,8 +1111,12 @@ a
 		.active
 			transform: translateX(0)
 		&-img-wrap
+			display: flex
+			height: auto
+			flex-direction: column
 			img
 				width: 100%
+				margin: auto 0
 		&-inner
 			background-color: #f6f6f6
 			padding: 60px 20px 40px
@@ -1107,7 +1125,7 @@ a
 			height: 100%
 			h2
 				text-transform: uppercase
-				font-size: 2.5em
+				font-size: 2.3em
 				font-weight: 200
 				position: relative
 				margin-bottom: 30px

@@ -6789,6 +6789,10 @@ a:active {
   text-align: center;
 }
 
+.m-0 {
+  margin: 0;
+}
+
 .fd-column {
   flex-direction: column;
 }
@@ -8345,13 +8349,39 @@ a:active {
 
 #small-dialog {
   max-width: 1230px;
-  max-height: 60%;
+  height: auto;
   padding: 0;
   overflow: hidden;
 }
 
+@media (max-width: 1269px) {
+  #small-dialog {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 991px) {
+  #small-dialog {
+    max-width: 767px;
+  }
+}
+
+@media (max-width: 767px) {
+  #small-dialog {
+    max-width: 713px;
+    min-width: 500px;
+  }
+}
+
 #small-dialog .order {
   padding: 0;
+}
+
+#small-dialog .order .close {
+  position: absolute;
+  top: 2px;
+  font-size: 27px;
+  cursor: pointer;
 }
 
 #small-dialog .order-form {
@@ -8420,8 +8450,15 @@ a:active {
   transform: translateX(0);
 }
 
+#small-dialog .order-img-wrap {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+}
+
 #small-dialog .order-img-wrap img {
   width: 100%;
+  margin: auto 0;
 }
 
 #small-dialog .order-inner {
@@ -8436,7 +8473,7 @@ a:active {
 
 #small-dialog .order-wrap h2 {
   text-transform: uppercase;
-  font-size: 2.5em;
+  font-size: 2.3em;
   font-weight: 200;
   position: relative;
   margin-bottom: 30px;
