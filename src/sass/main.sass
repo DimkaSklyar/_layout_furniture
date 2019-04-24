@@ -1049,6 +1049,7 @@ a
 	.order
 		padding: 0
 		&-form
+			padding: 60px 40px 40px 20px
 			position: absolute
 			top: 0
 			bottom: 0
@@ -1058,6 +1059,41 @@ a
 			z-index: 10
 			transform: translateX(615px)
 			transition: 1s
+			background-color: #f6f6f6
+			h2
+				text-transform: uppercase
+				font-size: 2.5em
+				font-weight: 200
+				position: relative
+				margin-bottom: 30px
+				color: #000
+				&:before
+					position: absolute
+					content: ''
+					bottom: 0
+					height: 1px
+					width: 100%
+					background-color: $accent
+			ol
+				list-style: none
+				padding: 0
+				margin: 0
+			input
+				border-radius: 15px
+				padding: 10px 10px
+				margin-bottom: 15px
+				width: 100%
+				border: 1px solid #cecece
+				outline: none 0
+				&[type="number"]
+					width: 80px
+			textarea
+				width: 100%
+				border-radius: 15px
+				padding: 10px 10px
+				border: 1px solid #cecece
+			.btn-order
+				margin: 0 !important
 		.active
 			transform: translateX(0)
 		&-img-wrap
@@ -1108,26 +1144,26 @@ a
 				font-size: 1.7em
 				color: #808080
 				font-weight: 100
-			.btn-order
-				width: 173px
-				padding: 12px 10px 13px
-				text-align: center
-				text-transform: uppercase
-				display: inline-block
-				font-size: 14px
-				line-height: 20px
-				font-family: "Montserrat", sans-serif
-				font-weight: 700
-				border: none
-				outline: none
-				border-radius: 25px
-				transition: all 0.25s linear
-				background: #ff8283
-				color: #fff
-				cursor: pointer
-				margin-left: 40px
-				&:hover
-					background-color: #000
+		.btn-order
+			width: 173px
+			padding: 12px 10px 13px
+			text-align: center
+			text-transform: uppercase
+			display: inline-block
+			font-size: 14px
+			line-height: 20px
+			font-family: "Montserrat", sans-serif
+			font-weight: 700
+			border: none
+			outline: none
+			border-radius: 25px
+			transition: all 0.25s linear
+			background: #ff8283
+			color: #fff
+			cursor: pointer
+			margin-left: 40px
+			&:hover
+				background-color: #000
 
 
 @import "media" // Always at the end

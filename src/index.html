@@ -879,16 +879,15 @@
 				<div class="col-lg-2 col-md-6">
 					<h3>Категории</h3>
 					<ul class="footer-category">
-						<li><a href="#">Корпусная мебель</a></li>
-						<li><a href="#">Мягкая мебель для офисов и кафе</a></li>
-						<li><a href="#">Мягкая мебель для дома</a></li>
+						<li><a href="category-1.html">Корпусная мебель</a></li>
+						<li><a href="category-2.html">Мягкая мебель для офисов и кафе</a></li>
+						<li><a href="category-3.html">Мягкая мебель для дома</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-6">
 					<h3 class="nav-h">Навигация</h3>
 					<ul class="footer-category">
 						<li><a href="index.html">Главная</a></li>
-						<li><a href="catalog.html">Каталог</a></li>
 						<li><a href="deliverypay.html">Доставка и оплата</a></li>
 						<li><a href="about.html">О нас</a></li>
 						<li><a href="contacts.html">Контакты</a></li>
@@ -959,6 +958,36 @@
 					</div>
 					<div class="order-form">
 						<h2>Оформить заказ</h2>
+						<form action="">
+							<fieldset style="border:0;">
+								<ol>
+									<li>
+										<input id="name" name="name" type="text" placeholder="Имя" required="">
+									</li>
+									<li>
+										<input id="email" name="email" type="e-mail" placeholder="e-mail" required="">
+									</li>
+									<li>
+										<input id="phone-1" name="phone" type="tel" placeholder="+7 (999) 99-99-999" required="">
+									</li>
+									<li>
+										<label for="textarea">Комментарий к заказу</label><br>
+										<textarea id="textarea" name="comment"></textarea>
+									</li>
+									<li>
+										<label for="quality-order">Кол-во: </label><br>
+										<input id="quality-order" type="number" name="quality-order" min="1" value="1">
+									</li>
+								</ol>
+								<input id="name-order" type="text" name="name-order" hidden>
+								<input id="price-order" type="text" name="price-order" hidden>
+								<input id="count-order" type="text" name="count-order" hidden>
+								
+							</fieldset>
+							<div id="messegeResult-order">
+								<button id="submit-form-z" type="submit" form="order-form" class="btn-order m0">Отправить</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>

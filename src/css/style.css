@@ -8355,6 +8355,7 @@ a:active {
 }
 
 #small-dialog .order-form {
+  padding: 60px 40px 40px 20px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -8364,6 +8365,55 @@ a:active {
   z-index: 10;
   transform: translateX(615px);
   transition: 1s;
+  background-color: #f6f6f6;
+}
+
+#small-dialog .order-form h2 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: 200;
+  position: relative;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+#small-dialog .order-form h2:before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #a0a0a0;
+}
+
+#small-dialog .order-form ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#small-dialog .order-form input {
+  border-radius: 15px;
+  padding: 10px 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  border: 1px solid #cecece;
+  outline: none 0;
+}
+
+#small-dialog .order-form input[type="number"] {
+  width: 80px;
+}
+
+#small-dialog .order-form textarea {
+  width: 100%;
+  border-radius: 15px;
+  padding: 10px 10px;
+  border: 1px solid #cecece;
+}
+
+#small-dialog .order-form .btn-order {
+  margin: 0 !important;
 }
 
 #small-dialog .order .active {
@@ -8439,7 +8489,7 @@ a:active {
   font-weight: 100;
 }
 
-#small-dialog .order-pay .btn-order {
+#small-dialog .order .btn-order {
   width: 173px;
   padding: 12px 10px 13px;
   text-align: center;
@@ -8459,7 +8509,7 @@ a:active {
   margin-left: 40px;
 }
 
-#small-dialog .order-pay .btn-order:hover {
+#small-dialog .order .btn-order:hover {
   background-color: #000;
 }
 
