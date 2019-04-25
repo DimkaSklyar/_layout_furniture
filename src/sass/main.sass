@@ -1274,6 +1274,41 @@ a
 		margin-bottom: 40px
 		+media-breakpoint-down(sm)
 			height: 400px
+
+.page-delivery
+	.delivery
+		background: url('../img/delivery.jpg')
+		background-size: cover
+		h1
+			padding: 50px 0
+			text-transform: uppercase
+	.delivery-desc
+		padding: 50px 0
+		p
+			line-height: 2
+		h3
+			text-transform: uppercase
+			font-size: 1.8em
+			padding: 10px 0
+		ul
+			padding: 0
+			margin-left: 10px
+			list-style: none
+			li
+				position: relative
+				padding-left: 20px
+				margin-bottom: .7em
+				line-height: 1.8
+				&:before
+					content: ''
+					position: absolute
+					left: 0
+					top: 8px
+					width: 8px
+					height: 8px
+					border-radius: 50%
+					background-color: $light-color
+
 @import "media" // Always at the end
 
 

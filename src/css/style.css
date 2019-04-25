@@ -8689,5 +8689,53 @@ a:active {
   }
 }
 
+.page-delivery .delivery {
+  background: url("../img/delivery.jpg");
+  background-size: cover;
+}
+
+.page-delivery .delivery h1 {
+  padding: 50px 0;
+  text-transform: uppercase;
+}
+
+.page-delivery .delivery-desc {
+  padding: 50px 0;
+}
+
+.page-delivery .delivery-desc p {
+  line-height: 2;
+}
+
+.page-delivery .delivery-desc h3 {
+  text-transform: uppercase;
+  font-size: 1.8em;
+  padding: 10px 0;
+}
+
+.page-delivery .delivery-desc ul {
+  padding: 0;
+  margin-left: 10px;
+  list-style: none;
+}
+
+.page-delivery .delivery-desc ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: .7em;
+  line-height: 1.8;
+}
+
+.page-delivery .delivery-desc ul li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ff5f5f;
+}
+
 /*==========  Desktop First  ==========*/
 /*==========  Mobile First  ==========*/
