@@ -8248,6 +8248,10 @@ a:active {
   position: relative;
 }
 
+.page-footer .subscib-form fieldset {
+  position: relative;
+}
+
 .page-footer .subscib-form input {
   width: 100%;
   border-radius: 25px;
