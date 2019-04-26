@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700,900&amp;subset=cyrillic"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+</head>
+
+<body>
+
+	<header class="page-header">
+		<div class="top-contacts">
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<a href="tel:+1231234567" class="top-contacts__item">+7 (123) 123-45-67</a>
+						<a href="mailto:example@example.ru" class="top-contacts__item">example@example.ru</a>
+					</div>
+					<div class="col-6 ta-r">
+						<a href="#form-callback" class="top-contacts__item popup-with-form">Заказать звонок</a>
+						<form id="form-callback" class="mfp-hide white-popup-block form-dialog">
+							<h2>Заказать звонок</h2>
+							<fieldset style="border:0;">
+								<p>Оставте ваш номер <br>мы вам перезвоним</p>
+								<ol>
+									<li>
+										<input id="name" name="name" type="text" placeholder="Имя" required="">
+									</li>
+									<li>
+										<input id="phone" name="phone" type="tel" placeholder="+7 (999) 99-99-999" required="">
+									</li>
+								</ol>
+							</fieldset>
+							<div id="messegeResult-callback">
+								<button id="submit-form-z" type="submit" form="form-callback" class="btn-form">Отправить</button>
+							</div>
+						</form>
+						<a href="https://yandex.ru/map-widget/v1/?um=constructor%3A949863e00f1903c77cd143206fad3b5afe5f3af0e3fabd2a417c951979c12ae6&amp;source=constructor"
+							class="top-contacts__item popup-gmaps">Показать на карте</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top-navigation">
+			<div class="container">
+				<div class="row justify-content-between align-items-baseline">
+					<div class="col-2 col-sm-1 mobile-menu-wrapper flex-first d-md-none d-block">
+						<a href="#" id="touch-menu">
+							<div id="nav-icon2">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-2 ta-c top-logo-wrap col-10 col-md-12">
+						<a href="index.html" title="Главная" class="top-logo-href">
+							<div class="top-logo ta-c">
+								<strong>LeoLux<span>.</span></strong>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-8 ta-c">
+						<nav class="top-nav">
+							<ul class="d-flex justify-content-md-center flex-md-row flex-column align-items-start menu">
+								<li><a href="index.html">Главная</a></li>
+								<li class="withsubmenu"><a href="#">Каталог</a>
+									<ul class="submenu">
+										<li><a href="category-1.html">Корпусная мебель</a></li>
+										<li><a href="category-2.html">Мягкая мебель</a></li>
+										<li><a href="category-3.html">Свет и текстиль</a></li>
+									</ul>
+								</li>
+								<li><a href="deliverypay.html">Доставка и оплата</a></li>
+								<li><a href="about.html">О нас</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-xl-2 d-none d-xl-block">
+						<div class="top-social">
+							<ul>
+								<li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="https://vk.com"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.instagram.com/leo_lux_mebel/"><i class="fa fa-instagram"
+											aria-hidden="true"></i></a></li>
+								<li><a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+								<li><a href="https://plus.google.com/"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="container-fluid category-product">
+			<div class="row">
+				<div class="col ta-c">
+					<h1>Мягкая мебель</h1>
+				</div>
+			</div>
+		</div>
+		<section class="product category-product-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="product__item">
+							<div class="product__item-wrapper">
+								<a href="#small-dialog" class="popup-with-move-anim main-order">
+									<div class="product-img">
+										<figure class="horizont"><img src="img/products/product12.jpg" alt=""></figure>
+									</div>
+								</a>
+								<p class="d-none d-1">Кресло Мадейра украсит собой домашнюю лаунж-зону или уголок для чтения. Спинка,
+									дополненная пышной подушкой, позволит полностью расслабиться при просмотре любимого сериала или
+									спортивного матча.</p>
+								<p class="d-none d-2">Для достижения максимального комфорта в подушке сиденья использована многослойная
+									конструкция мягких элементов.</p>
+								<div class="product-disc">
+									<a href="#small-dialog" class="popup-with-move-anim product-name main-order title">КРЕСЛО МАДЕЙРА</a>
+									<div class="price">
+										<i class="fa fa-rub" aria-hidden="true"></i>
+										<span class="price-product">15 399</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="product__item">
+							<div class="product__item-wrapper">
+								<a href="#small-dialog" class="popup-with-move-anim main-order">
+									<div class="product-img">
+										<figure class="horizont"><img src="img/products/banner-1.jpg" alt=""></figure>
+									</div>
+								</a>
+								<p class="d-none d-1">Диван Аманда выполнен в классическом стиле со сдержанным достоинством и
+									элегантностью. Удобная модель с необычной формой подушек станет украшением семейной гостиной и
+									комфортно разместит гостей. Благородный натуральный материал обивки выглядит великолепно и прост в
+									уходе.</p>
+								<p class="d-none d-2">Материал: натуральная кожа (сиденье, лицевая сторона подушек спинки),
+									искусственная кожа (царга, задняя часть дивана, подлокотники)</p>
+								<div class="product-disc">
+									<a href="#small-dialog" class="popup-with-move-anim product-name main-order title">ДИВАН АМАНДА</a>
+									<div class="price">
+										<i class="fa fa-rub" aria-hidden="true"></i>
+										<span class="price-product">15 999</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="product__item">
+							<div class="product__item-wrapper">
+								<a href="#small-dialog" class="popup-with-move-anim main-order">
+									<div class="product-img">
+										<figure><img src="img/products/product10.jpg" alt=""></figure>
+									</div>
+								</a>
+								<p class="d-none d-1">Велюр – обивочная ткань с мягкой бархатистой поверхностью. Материал устойчив к
+									заломам и выпадению ворсинок, обладает высоким показателем истираемости и прекрасно смотрится как на
+									классических диванах, так и на прямых лаконичных моделях.</p>
+								<p class="d-none d-2">Ткань легко поддается сухой чистке при помощи пылесоса, щетки или валика.
+								</p>
+								<div class="product-disc">
+									<a href="#small-dialog" class="popup-with-move-anim product-name main-order title">КРЕСЛО PETRA</a>
+									<div class="price">
+										<i class="fa fa-rub" aria-hidden="true"></i>
+										<span class="price-product">8 599</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="product__item">
+							<div class="product__item-wrapper">
+								<a href="#small-dialog" class="popup-with-move-anim main-order">
+									<div class="product-img">
+										<figure class="horizont"><img src="img/products/category-product-16.jpg" alt=""></figure>
+									</div>
+								</a>
+								<p class="d-none d-1">Диван-кровать Аманда в обивке из микровелюра станет центром интерьерной композиции
+									в гостиной. Оригинальный вид модели придают боковины с подлокотниками в виде валиков</p>
+								<p class="d-none d-2">Форма которых подчеркнута контрастным кантом. Мягкие элементы спинки наполнены
+									полиэфирным волокном, упругость сиденьям придает блок плоских пружин «змейка».</p>
+								<div class="product-disc">
+									<a href="#small-dialog" class="popup-with-move-anim product-name main-order title">Диван-кровать
+										Аманда</a>
+									<div class="price">
+										<i class="fa fa-rub" aria-hidden="true"></i>
+										<span class="price-product">19 999</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="product__item">
+							<div class="product__item-wrapper">
+								<a href="#small-dialog" class="popup-with-move-anim main-order">
+									<div class="product-img">
+										<figure class="horizont"><img src="img/products/category-product-17.jpg" alt=""></figure>
+									</div>
+								</a>
+								<p class="d-none d-1">Диван Риммини быстро превращается в удобную двуспальную кровать с помощью
+									механизма трансформации сандра. Независимый пружинный блок на металлическом каркасе равномерно
+									распределяет нагрузку, не провисает, способствует наиболее комфортному положению во время сидения и
+									сна. </p>
+								<p class="d-none d-2">Наполнитель из высокоэластичного ППУ адаптируется к форме тела, сохраняя при этом
+									упругость: с дивана легко подниматься.</p>
+								<div class="product-disc">
+									<a href="#small-dialog" class="popup-with-move-anim product-name main-order title">Диван-кровать
+										Риммини</a>
+									<div class="price">
+										<i class="fa fa-rub" aria-hidden="true"></i>
+										<span class="price-product">37 999</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="product__item">
+							<div class="product__item-wrapper">
+								<a href="#small-dialog" class="popup-with-move-anim main-order">
+									<div class="product-img">
+										<figure class="horizont"><img src="img/products/category-product-18.jpg" alt=""></figure>
+									</div>
+								</a>
+								<p class="d-none d-1">Всё в стильном и элегантном диване Мартин располагает к отдыху: и плавные линии
+									подлокотников, и мягкие подушки, и бархатистая микровелюровая обивка. Не менее продумано и наполнение
+									модели.</p>
+								<p class="d-none d-2">Его основа — независимый пружинный блок, в котором каждая пружина бесшумно
+									прогибается под действующей именно на нее нагрузкой.</p>
+								<div class="product-disc">
+									<a href="#small-dialog" class="popup-with-move-anim product-name main-order title">Диван-кровать
+										Мартин</a>
+									<div class="price">
+										<i class="fa fa-rub" aria-hidden="true"></i>
+										<span class="price-product">28 999</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="product__item">
+							<div class="product__item-wrapper">
+								<a href="#small-dialog" class="popup-with-move-anim main-order">
+									<div class="product-img">
+										<figure class="horizont"><img src="img/products/category-product-19.jpg" alt=""></figure>
+									</div>
+								</a>
+								<p class="d-none d-1">Необычная обтекаемая форма углового дивана Наполи придется по вкусу любителям
+									современного стиля и лаконичных решений.
+								</p>
+								<p class="d-none d-2">У конструкции отсутствуют подлокотники, сиденье и спинка обтянуты светлой
+									эко-кожей, с которой эффектно контрастируют мягкие текстильные элементы сиденья и спинки</p>
+								<div class="product-disc">
+									<a href="#small-dialog" class="popup-with-move-anim product-name main-order title">Угловой
+										диван-кровать Наполи</a>
+									<div class="price">
+										<i class="fa fa-rub" aria-hidden="true"></i>
+										<span class="price-product">35 999</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="product__item">
+							<div class="product__item-wrapper">
+								<a href="#small-dialog" class="popup-with-move-anim main-order">
+									<div class="product-img">
+										<figure class="horizont"><img src="img/products/category-product-20.jpg" alt=""></figure>
+									</div>
+								</a>
+								<p class="d-none d-1">Диван-кровать Аманда в обивке из микровелюра станет центром интерьерной композиции
+									в гостиной.</p>
+								<p class="d-none d-2">Оригинальный вид модели придают боковины с подлокотниками в виде валиков, форма
+									которых подчеркнута контрастным кантом. Мягкие элементы спинки наполнены полиэфирным волокном,
+									упругость сиденьям придает блок плоских пружин «змейка».</p>
+								<div class="product-disc">
+									<a href="#small-dialog" class="popup-with-move-anim product-name main-order title">Диван-кровать
+										Аманда</a>
+									<div class="price">
+										<i class="fa fa-rub" aria-hidden="true"></i>
+										<span class="price-product">19 999</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="product__item">
+							<div class="product__item-wrapper">
+								<a href="#small-dialog" class="popup-with-move-anim main-order">
+									<div class="product-img">
+										<figure class="horizont"><img src="img/products/category-product-21.jpg" alt=""></figure>
+									</div>
+								</a>
+								<p class="d-none d-1">Угловой диван-кровать Валери – практичное и современное решение для просторной
+									гостиной, оформленной в стилях поп-арт, модерн.</p>
+								<p class="d-none d-2">В дизайне преобладают четкие геометрические линии. Мягкие стеганные подушки
+									придадут помещению уют.</p>
+								<div class="product-disc">
+									<a href="#small-dialog" class="popup-with-move-anim product-name main-order title">Угловой
+										диван-кровать Валери</a>
+									<div class="price">
+										<i class="fa fa-rub" aria-hidden="true"></i>
+										<span class="price-product">35 999</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="product__item">
+							<div class="product__item-wrapper">
+								<a href="#small-dialog" class="popup-with-move-anim main-order">
+									<div class="product-img">
+										<figure class="horizont"><img src="img/products/category-product-22.jpg" alt=""></figure>
+									</div>
+								</a>
+								<p class="d-none d-1">Элегантный диван Лиссабон станет украшением как классического интерьера, так и
+									интерьера в стиле модерн. Его отличает лаконичный дизайн и эргономичность: плотный синтетический
+									наполнитель хорошо держит форму и обеспечивает комфортный отдых, а съемные мягкие подлокотники и
+									большие, оформленные строчкой подушки не только привлекательны, но и весьма удобны.</p>
+								<p class="d-none d-2">С помощью механизма «еврокнижка» диван легко превращается в удобное спальное место
+								</p>
+								<div class="product-disc">
+									<a href="#small-dialog" class="popup-with-move-anim product-name main-order title">Диван-кровать
+										Лиссабон</a>
+									<div class="price">
+										<i class="fa fa-rub" aria-hidden="true"></i>
+										<span class="price-product">14 999</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="product__item">
+							<div class="product__item-wrapper">
+								<a href="#small-dialog" class="popup-with-move-anim main-order">
+									<div class="product-img">
+										<figure class="horizont"><img src="img/products/category-product-23.jpg" alt=""></figure>
+									</div>
+								</a>
+								<p class="d-none d-1">Эту модель вы можете заказать в любом из понравившихся вариантов обивки.
+									Посмотреть образцы тканей, рассчитать стоимость мебели и получить информацию о сроках ее изготовления
+								</p>
+								<p class="d-none d-2">
+									МАТЕРИАЛ ОБИВКИ - ВЕЛЮР
+									Велюр – обивочная ткань с мягкой бархатистой поверхностью.</p>
+								<div class="product-disc">
+									<a href="#small-dialog" class="popup-with-move-anim product-name main-order title">Кресло-кровать
+										Тулуза</a>
+									<div class="price">
+										<i class="fa fa-rub" aria-hidden="true"></i>
+										<span class="price-product">34 999</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="product__item">
+							<div class="product__item-wrapper">
+								<a href="#small-dialog" class="popup-with-move-anim main-order">
+									<div class="product-img">
+										<figure class="horizont"><img src="img/products/category-product-24.jpg" alt=""></figure>
+									</div>
+								</a>
+								<p class="d-none d-1">Кресло Валери можно использовать для обустройства мягкой зоны в гостиной –
+									отдельно или в композиции с диваном. Глубина посадки и комфортный угол наклона спинки позволят
+									отдыхать с максимальным удобством.</p>
+								<p class="d-none d-2">Подушка сиденья простегана квадратами, ее упругость обеспечивает наполнитель из
+									ППУ и эластичное основание на основе резиновых лент</p>
+								<div class="product-disc">
+									<a href="#small-dialog" class="popup-with-move-anim product-name main-order title">Кресло Валери</a>
+									<div class="price">
+										<i class="fa fa-rub" aria-hidden="true"></i>
+										<span class="price-product">7 599</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="product__item">
+							<div class="product__item-wrapper">
+								<a href="#small-dialog" class="popup-with-move-anim main-order">
+									<div class="product-img">
+										<figure class="horizont"><img src="img/products/category-product-25.jpg" alt=""></figure>
+									</div>
+								</a>
+								<p class="d-none d-1">Кресло Сиеста достойно своего названия – в нем хочется не только проводить вечера
+									в домашнем кинозале, но и устроить себе дополнительный полуденный отдых. К этому располагают сиденье
+									комфортной глубины, закругленные подлокотники, усиленный пружинным блоком наполнитель.
+								</p>
+								<p class="d-none d-2"> Высокая спинка украшена классической стяжкой капитоне, выполненной при помощи
+									утопленных пуговиц и образующей рельефный ромбовидный рисунок. </p>
+								<div class="product-disc">
+									<a href="#small-dialog" class="popup-with-move-anim product-name main-order title">Кресло Сиеста</a>
+									<div class="price">
+										<i class="fa fa-rub" aria-hidden="true"></i>
+										<span class="price-product">10 999</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="product__item">
+							<div class="product__item-wrapper">
+								<a href="#small-dialog" class="popup-with-move-anim main-order">
+									<div class="product-img">
+										<figure class="horizont"><img src="img/products/banner-3.jpg" alt=""></figure>
+									</div>
+								</a>
+								<p class="d-none d-1">Стильное однотонное кресло Валери обито износостойким велюром. Благодаря
+									небольшому весу оно станет достаточно мобильным элементом гостиной зоны. Достоинствами модели являются
+									чистые, аккуратные линии и выверенная форма. Несмотря на компактный вид, кресло очень вместительное
+									благодаря трапециевидной форме боковин: в нём будет уютно и мужчинам, и женщинам.
+								</p>
+								<p class="d-none d-2">Высокая спинка обеспечивает хорошую поддержку. Заостренные подлокотники –
+									привлекательная деталь, которые придает креслу налет ретро-стиля.</p>
+								<div class="product-disc">
+									<a href="#small-dialog" class="popup-with-move-anim product-name main-order title">Кресло валери
+										mix</a>
+									<div class="price">
+										<i class="fa fa-rub" aria-hidden="true"></i>
+										<span class="price-product">6 999</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="product__item">
+							<div class="product__item-wrapper">
+								<a href="#small-dialog" class="popup-with-move-anim main-order">
+									<div class="product-img">
+										<figure class="horizont"><img src="img/products/product11.jpg" alt=""></figure>
+									</div>
+								</a>
+								<p class="d-none d-1">Искусственный ротанг - это особо прочный, лёгкий и экологически чистый материал,
+									который полностью повторяет прекрасный внешний вид натурального ротанга.
+								</p>
+								<p class="d-none d-2">Мебель из такого материала может стоять прямо под открытым небом, ведь
+									искусственный ротанг прекрасно переносит солнечные лучи, перепады влажности и любые осадки.</p>
+								<div class="product-disc">
+									<a href="#small-dialog" class="popup-with-move-anim product-name main-order title">Кресло Larje</a>
+									<div class="price">
+										<i class="fa fa-rub" aria-hidden="true"></i>
+										<span class="price-product">3 756</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row row-fix m-0">
+				<div class="col-lg-4 col-md-6">
+					<a href="index.html" title="Главная" class="bottom-logo-href">
+						<div class="bottom-logo">
+							<strong>LeoLux<span>.</span></strong>
+						</div>
+					</a>
+					<p class="bottom-about">Фабрика по производству мягкой и корпусной мебели в г. Краснодаре</p>
+					<ul class="location-contacts">
+						<li>
+							<i class="fa fa-location-arrow" aria-hidden="true"></i>
+							<a href="#">
+								<address> г. Краснодар, пгт. Пашковский, ул. Крупской, 2/8</address>
+							</a>
+						</li>
+						<li><i class="fa fa-phone" aria-hidden="true"></i><a href="#">+7 (861)266-50-56 </a></li>
+						<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="#">leolux@list.ru</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6">
+					<h3>Категории</h3>
+					<ul class="footer-category">
+						<li><a href="category-1.html">Корпусная мебель</a></li>
+						<li><a href="category-2.html">Мягкая мебель для офисов и кафе</a></li>
+						<li><a href="category-3.html">Мягкая мебель для дома</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-6">
+					<h3 class="nav-h">Навигация</h3>
+					<ul class="footer-category">
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="deliverypay.html">Доставка и оплата</a></li>
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="subscib ta-r">
+						<h3>Подписка</h3>
+						<p>Оставьте свой e-mail адрес и будьте в курсе всех скидок</p>
+						<form action="" method="post" class="subscib-form">
+							<fieldset>
+								<input type="email" name="email" id="sub-mail" placeholder="Ваш e-mail">
+								<button type="submit"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+							</fieldset>
+						</form>
+					</div>
+					<div class="footer-social-wrap ta-r">
+						<h3>Мы в социальных сетях</h3>
+						<ul class="footer-social">
+							<li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="https://vk.com"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.instagram.com/leo_lux_mebel/"><i class="fa fa-instagram"
+										aria-hidden="true"></i></a></li>
+							<li><a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+							</li>
+							<li><a href="https://plus.google.com/"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+		<div class="container order">
+			<div class="row no-gutters">
+				<div class="col-md-6 col-12">
+					<figure class="order-img-wrap">
+						<img src="img/products/product1.jpg" alt="" id="product-img">
+					</figure>
+				</div>
+				<div class="col-md-6 col-12 order-inner">
+					<div class="order-wrap d-flex flex-column justify-content-between">
+						<div class="order-description">
+							<h2 id="product-name">Заголовок</h2>
+							<p id="description-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima deserunt debitis ex
+								possimus doloribus
+								quia consequatur facilis delectus dolorum illo asperiores repellat, quidem iste, tempore
+								consequuntur
+								porro deleniti aliquam amet!</p>
+							<p id="description-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, molestiae?
+								Quaerat
+								maxime
+								exercitationem cumque, consectetur porro iste, inventore voluptas enim voluptates
+								laboriosam id est sed
+								facilis tempora nesciunt, modi eum?</p>
+						</div>
+						<div class="order-pay">
+							<div class="price-wrap">
+								<span class="price" id="price">1000</span> <i class="fa fa-rub" aria-hidden="true"></i>
+							</div>
+							<div class="d-flex align-items-end">
+								<span class="help-col">Кол-во: </span>
+								<input type="number" name="quanty" id="quanty" value="1" min="1">
+								<a href="#p" class="btn-order" id="pay">Заказать</a>
+							</div>
+						</div>
+					</div>
+					<div class="order-form">
+						<span class="close"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+						<h2>Оформить заказ</h2>
+						<form action="">
+							<fieldset style="border:0;">
+								<ol>
+									<li>
+										<input id="name" name="name" type="text" placeholder="Имя" required="">
+									</li>
+									<li>
+										<input id="email" name="email" type="e-mail" placeholder="e-mail" required="">
+									</li>
+									<li>
+										<input id="phone-1" name="phone" type="tel" placeholder="+7 (999) 99-99-999" required="">
+									</li>
+									<li>
+										<label for="textarea">Комментарий к заказу</label><br>
+										<textarea id="textarea" name="comment"></textarea>
+									</li>
+									<li>
+										<label for="quality-order">Кол-во: </label><br>
+										<input id="quality-order" type="number" name="quality-order" min="1" value="1">
+									</li>
+								</ol>
+								<input id="name-order" type="text" name="name-order" hidden>
+								<input id="price-order" type="text" name="price-order" hidden>
+								<input id="count-order" type="text" name="count-order" hidden>
+
+							</fieldset>
+							<div id="messegeResult-order">
+								<button id="submit-form-z" type="submit" form="order-form" class="btn-order m0">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+</body>
+
+</html>
