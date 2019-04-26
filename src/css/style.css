@@ -6802,6 +6802,8 @@ a:active {
   font-weight: bold;
   letter-spacing: 3px;
   margin-top: 30px;
+  display: block;
+  margin: 0 auto;
 }
 
 .ta-c {
@@ -8571,6 +8573,22 @@ a:active {
 
 #small-dialog .order .btn-order:hover {
   background-color: #000;
+}
+
+#small-dialog .info-price {
+  font-size: 25px;
+}
+
+#small-dialog .info-price-wrap {
+  margin-bottom: 10px;
+}
+
+#small-dialog .info-price-wrap i {
+  font-size: 22px;
+}
+
+.close-active {
+  transform: rotate(180deg);
 }
 
 .page-contact__about .logo {

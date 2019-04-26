@@ -1150,7 +1150,7 @@
 					<div class="order-form">
 						<span class="close"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
 						<h2>Оформить заказ</h2>
-						<form action="">
+						<form id="form-main-order">
 							<fieldset style="border:0;">
 								<ol>
 									<li>
@@ -1166,18 +1166,21 @@
 										<label for="textarea">Комментарий к заказу</label><br>
 										<textarea id="textarea" name="comment"></textarea>
 									</li>
-									<li>
-										<label for="quality-order">Кол-во: </label><br>
-										<input id="quality-order" type="number" name="quality-order" min="1" value="1">
+									<li class="info-price-wrap">
+										<span class="info-price">Кол-во: </span>
+										<span class="info-price" id="quality">4</span>
+										<span class="info-price">шт.</span> <br>
+										<span class="info-price">Сумма: </span>
+										<span class="info-price" id="sum">1999</span><i class="fa fa-rub" aria-hidden="true"></i>
 									</li>
 								</ol>
 								<input id="name-order" type="text" name="name-order" hidden>
 								<input id="price-order" type="text" name="price-order" hidden>
 								<input id="count-order" type="text" name="count-order" hidden>
-
+								<input id="sum-order" type="text" name="sum-order" hidden>
 							</fieldset>
 							<div id="messegeResult-order">
-								<button id="submit-form-z" type="submit" form="order-form" class="btn-order m0">Отправить</button>
+								<button id="submit-form-z" type="submit" form="form-main-order" class="btn-order m0">Отправить</button>
 							</div>
 						</form>
 					</div>

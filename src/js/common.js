@@ -17,11 +17,10 @@
 				}, 5000);
 			}, 
 			error: function(response) { 
-				$('.m-0').remove();
 				var par = document.getElementById(result_id);
-				var error = document.createElement('p');
+				var error = document.createElement('span');
 				error.classList.add("mt-3");
-				error.innerHTML = "Возникла ошибка при отправке формы. Попробуйте еще раз";
+				error.innerHTML = "Возникла ошибка при отправке формы.";
 				if (result_id != 'messegeResult-sub'){
 					par.appendChild(error);
 				}
@@ -49,7 +48,7 @@
 				var par = document.getElementById(result_id);
 				var error = document.createElement('p');
 				error.classList.add("mt-3");
-				error.innerHTML = "Возникла ошибка при отправке формы. Попробуйте еще раз";
+				error.innerHTML = "Возникла ошибка при отправке формы.";
 				if (result_id != 'messegeResult-sub'){
 					par.appendChild(error);
 				}
@@ -61,10 +60,19 @@
 		e.preventDefault();
 		AjaxFormRequest('messegeResult-callback','form-callback','./callback.php');
 	});
+	$('#form-main-order').submit(function(e){
+		e.preventDefault();
+		AjaxFormRequest('messegeResult-order','form-main-order','./order.php');
+	});
 
 	$('#subscribe-form').submit(function(e){
 		e.preventDefault();
 		AjaxFormRequest_1('subscribe-form','subscribe-form','./subscribe.php');
+	});
+
+	$('#feedback').submit(function(e){
+		e.preventDefault();
+		AjaxFormRequest('messegeResult-feedback','feedback','./feedback.php');
 	});
 	
 	window.addEventListener("DOMContentLoaded", function() {
@@ -281,6 +289,19 @@ removeClassCol();
 
 $('#pay').click(function () { 
 	$('.order-form').addClass('active');
+	var price = $('#price').text().replace(/ +/g, "");
+	var count = $('#quanty').val();
+	var sum = +price * +count;
+	var sum2 = sum.toString().split('');
+	sum2.splice(sum2.length-3,0," ");
+	sum = sum2.join('');
+	$('#quality').text($('#quanty').val());
+	$('#sum').text(sum);
+	$('#price-order').val(price);
+	$('#count-order').val(count);
+	$('#sum-order').val(sum);
+	$('#name-order').val($('#product-name').text());
+	$('.close').removeClass('close-active');
 });
 
 $('.mfp-close').click(function () { 
@@ -289,6 +310,7 @@ $('.mfp-close').click(function () {
 
 $('.close').click(function () { 
 	$('.order-form').removeClass('active');
+	$(this).addClass('close-active');
 	
 });
 
