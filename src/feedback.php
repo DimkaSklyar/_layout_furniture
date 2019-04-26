@@ -2,7 +2,7 @@
 if($_POST) 
 { 
 $to = "cactus8@yandex.ru"; //куда отправлять письмо 
-$subject = "Обратная связь $_POST['subject']"; //тема 
+$subject = 'Обратная связь!'.$_POST['subject']; //тема 
 $message = '<span style="font-weight:bold;color:#ff6600;font-size:18px;"><i>Подписка!</i> </span><br><br> 
 Имя: <span style="font-weight:bold;color:#000;">'.$_POST['name'].'</span><br> 
 E-mail: <span style="font-weight:bold;color:#000;">'.$_POST['email'].'</span><br> 

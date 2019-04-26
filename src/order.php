@@ -17,7 +17,7 @@ $headers .= "From: info@my-site.ru\r\n"; // от кого, придумайте 
 $result = mail($to, $subject, $message, $headers); 
 
 if ($result){ 
-echo "<p id='message' style='
+echo "<span id='message' style='
 text-transform: uppercase;
 font-size: 1em;
 background-color: #ffffff;
@@ -26,8 +26,8 @@ padding: .4em;
 box-shadow: 0 19px 49px 0px rgba(81,74,48,0.3);
 text-align: center;
 margin-top: 10px;
-'>Сообщение успешно отправлено.</br> 
-Скоро Вам перезвонят</p>"; 
+'>Заказ оформлен.</br> 
+Скоро Вам перезвонят</span>"; 
 } 
 } 
 ?>
